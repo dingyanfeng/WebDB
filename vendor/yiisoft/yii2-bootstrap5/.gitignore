@@ -1,37 +1,37 @@
 # phpstorm project files
-.idea
+# .idea
 
 # netbeans project files
-nbproject
+# nbproject
 
 # zend studio for eclipse project files
-.buildpath
-.project
-.settings
+# .buildpath
+# .project
+# .settings
 
 # windows thumbnail cache
-Thumbs.db
+# Thumbs.db
 
 # composer
-composer.phar
-/vendor
-/composer.lock
+# composer.phar
+# /vendor
+# /composer.lock
 
 # Mac DS_Store Files
-.DS_Store
+# .DS_Store
 
 # phpunit itself is not needed
-phpunit.phar
+# phpunit.phar
 # local phpunit config
-/phpunit.xml
+# /phpunit.xml
 
-/tests/bootstrap.local.php
-/tests/runtime
-/tests/data/config.local.php
-/tests/docker
-/tests/dockerids
+# /tests/bootstrap.local.php
+# /tests/runtime
+# /tests/data/config.local.php
+# /tests/docker
+# /tests/dockerids
 
 # nodejs
-/node_modules
-/package-lock.json
-.phpunit.result.cache
+# /node_modules
+# /package-lock.json
+# .phpunit.result.cache
