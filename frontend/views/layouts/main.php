@@ -91,9 +91,9 @@ AppAsset_b::register($this);
                                     $menuItems[] = ['label' => '修改信息', 'url' => ['/site/modify']];
 
 
-                                    if (Yii::$app->user->identity->type == 1 || Yii::$app->user->identity->type == 2 || \common\models\TeamMember::isMember(Yii::$app->user->identity->account)) {
-                                        $menuItems[] = ['label' => '后台管理', 'url' => ['/backend/site/index']];
-                                    }
+                                    // if (Yii::$app->user->identity->type == 1 || Yii::$app->user->identity->type == 2 || \common\models\TeamMember::isMember(Yii::$app->user->identity->account)) {
+                                    //     $menuItems[] = ['label' => '后台管理', 'url' => ['/backend/site/index']];
+                                    // }
 
                                     $menuItems[] = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li><span>"
                                         . Html::beginForm(['/site/logout'], 'post')
