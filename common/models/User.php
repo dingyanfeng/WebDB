@@ -9,205 +9,157 @@ use yii\db\ActiveRecord;
 use yii\web\IdentityInterface;
 
 /**
- * User model
+ * 用户模型
  *
- * @property integer $id
- * @property string $username
- * @property string $password_hash
- * @property string $password_reset_token
- * @property string $verification_token
- * @property string $email
- * @property string $auth_key
- * @property integer $status
- * @property integer $created_at
- * @property integer $updated_at
- * @property string $password write-only password
+ * @property string $account       身份证号
+ * @property string $username      用户名
+ * @property string $password_hash 加密存储的密码
+ * @property string $password      登录时传入的密码，未加密
+ * @property string $auth_key      认证信息
+ * @property string $tel           联系方式
+ * @property string $nationality   国籍
  */
 class User extends ActiveRecord implements IdentityInterface
 {
-    const STATUS_DELETED = 0;
-    const STATUS_INACTIVE = 9;
-    const STATUS_ACTIVE = 10;
-
-
-    /**
+    /*
+     * @return 返回的是数据库中存储用户使用的表名
      * {@inheritdoc}
      */
     public static function tableName()
     {
-        return '{{%user}}';
+        return '{{%User}}';
     }
 
-    /**
-     * {@inheritdoc}
+    /*
+     * 通过身份证号寻找唯一的用户
+     * 返回一个MyUser类
      */
-    public function behaviors()
+    public static function findIdentity($account)
     {
-        return [
-            TimestampBehavior::class,
-        ];
+        return static::findOne(['account' => $account]);
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function rules()
-    {
-        return [
-            ['status', 'default', 'value' => self::STATUS_INACTIVE],
-            ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_INACTIVE, self::STATUS_DELETED]],
-        ];
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public static function findIdentity($id)
-    {
-        return static::findOne(['id' => $id, 'status' => self::STATUS_ACTIVE]);
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public static function findIdentityByAccessToken($token, $type = null)
-    {
-        throw new NotSupportedException('"findIdentityByAccessToken" is not implemented.');
-    }
-
-    /**
-     * Finds user by username
-     *
-     * @param string $username
-     * @return static|null
-     */
-    public static function findByUsername($username)
-    {
-        return static::findOne(['username' => $username, 'status' => self::STATUS_ACTIVE]);
-    }
-
-    /**
-     * Finds user by password reset token
-     *
-     * @param string $token password reset token
-     * @return static|null
-     */
-    public static function findByPasswordResetToken($token)
-    {
-        if (!static::isPasswordResetTokenValid($token)) {
-            return null;
-        }
-
-        return static::findOne([
-            'password_reset_token' => $token,
-            'status' => self::STATUS_ACTIVE,
-        ]);
-    }
-
-    /**
-     * Finds user by verification email token
-     *
-     * @param string $token verify email token
-     * @return static|null
-     */
-    public static function findByVerificationToken($token) {
-        return static::findOne([
-            'verification_token' => $token,
-            'status' => self::STATUS_INACTIVE
-        ]);
-    }
-
-    /**
-     * Finds out if password reset token is valid
-     *
-     * @param string $token password reset token
-     * @return bool
-     */
-    public static function isPasswordResetTokenValid($token)
-    {
-        if (empty($token)) {
-            return false;
-        }
-
-        $timestamp = (int) substr($token, strrpos($token, '_') + 1);
-        $expire = Yii::$app->params['user.passwordResetTokenExpire'];
-        return $timestamp + $expire >= time();
-    }
-
-    /**
-     * {@inheritdoc}
+    /*
+     * 返回用户对象的主键
      */
     public function getId()
     {
         return $this->getPrimaryKey();
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function getAuthKey()
-    {
-        return $this->auth_key;
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function validateAuthKey($authKey)
-    {
-        return $this->getAuthKey() === $authKey;
-    }
-
-    /**
-     * Validates password
-     *
-     * @param string $password password to validate
-     * @return bool if password provided is valid for current user
+    /*
+     * 传入参数为待验证密码
      */
     public function validatePassword($password)
     {
         return Yii::$app->security->validatePassword($password, $this->password_hash);
     }
 
-    /**
-     * Generates password hash from password and sets it to the model
-     *
-     * @param string $password
+    /*
+     * 未实现接口中的这个函数，不用管
      */
-    public function setPassword($password)
+    public static function findIdentityByAccessToken($token, $type = null)
     {
-        $this->password_hash = Yii::$app->security->generatePasswordHash($password);
+        throw new NotSupportedException('"findIdentityByAccessToken" is not implemented.');
     }
 
-    /**
-     * Generates "remember me" authentication key
+    /*
+     * 验证认证信息是否正确
+     */
+    public function validateAuthKey($authKey)
+    {
+        return $this->getAuthKey() === $authKey;
+    }
+
+    /*
+     * 生成一个长度为32的验证信息string
      */
     public function generateAuthKey()
     {
         $this->auth_key = Yii::$app->security->generateRandomString();
     }
 
-    /**
-     * Generates new password reset token
+    /*
+     * 返回当前用户的认证信息
      */
-    public function generatePasswordResetToken()
+    public function getAuthKey()
     {
-        $this->password_reset_token = Yii::$app->security->generateRandomString() . '_' . time();
+        return $this->auth_key;
     }
 
-    /**
-     * Generates new token for email verification
+    /*
+     * 设置密码
      */
-    public function generateEmailVerificationToken()
+    public function setPassword($password)
     {
-        $this->verification_token = Yii::$app->security->generateRandomString() . '_' . time();
+        $this->password_hash = Yii::$app->security->generatePasswordHash($password);
     }
 
-    /**
-     * Removes password reset token
+    /*
+     * 设置用户名
      */
-    public function removePasswordResetToken()
+    public function setUsername($username)
     {
-        $this->password_reset_token = null;
+        $this->username = $username;
     }
+
+    // basic checkers
+    private function checkAccount()
+    {
+        $len = strlen($this->account);
+        if ($len != 18)
+            return false;
+        return true;
+    }
+
+    // 获取所有的居民
+    // public function getResident()
+    // {
+    //     return $this->hasOne(Resident::className(), ['account' => 'account']);
+    // }
+
+    // 获取所有的职员
+    // public function getCommittee()
+    // {
+    //     return $this->hasOne(Committee::className(), ['account' => 'account']);
+    // }
+
+    // public function getHealth()
+    // {
+    //     return $this->hasOne(Health::className(), ['account' => 'account']);
+    // }
+
+    // public function getTransactions()
+    // {
+    //     return $this->hasOne(Transactions::className(), ['account' => 'account']);
+    // }
+
+    // basic setters
+    public function setAccount($account)
+    {
+        $this->account = $account;
+    }
+
+    // public function setName($name)
+    // {
+    //     $this->name = $name;
+    // }
+
+
+    public function setTel($tel)
+    {
+        $this->tel = $tel;
+    }
+
+    // public function setType($type)
+    // {
+    //     $this->type = $type;
+    // }
+
+    // public function visitors(){
+    //     $query = User::find()->where(['type' => 3])->all();
+    //     return count($query);
+    // }
 }
+
+

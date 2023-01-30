@@ -11,9 +11,10 @@ use common\models\User;
  */
 class SignupForm extends Model
 {
-    public $username;
-    public $email;
+    public $account;
     public $password;
+    public $username;
+    public $tel;
 
 
     /**
@@ -22,19 +23,20 @@ class SignupForm extends Model
     public function rules()
     {
         return [
+            [['account', 'name', 'tel'], 'trim'],
+            ['account', 'required', 'message' => '账户不能为空'],
+            ['account', 'unique', 'targetClass' => '\common\models\User', 'message' => '账户已存在'],
+            ['account', 'string', 'min' => 18, 'max' => 18, 'tooShort' => '账户应为18位身份证号', 'tooLong' => '账户应为18位身份证号'],
+
             ['username', 'trim'],
-            ['username', 'required'],
-            ['username', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This username has already been taken.'],
-            ['username', 'string', 'min' => 2, 'max' => 255],
+            ['username', 'required', 'message' => '用户名不能为空'],
+            ['username', 'string', 'min' => 1, 'max' => 10, 'tooShort' => '用户名的长度必须在1到10之间', 'tooLong' => '用户名的长度必须在1到10之间'],
 
-            ['email', 'trim'],
-            ['email', 'required'],
-            ['email', 'email'],
-            ['email', 'string', 'max' => 255],
-            ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been taken.'],
+            ['password', 'required', 'message' => '密码不能为空'],
+            ['password', 'string', 'min' => 4, 'tooShort' => "密码长度必须大于等于4位"],
 
-            ['password', 'required'],
-            ['password', 'string', 'min' => Yii::$app->params['user.passwordMinLength']],
+            ['tel', 'required', 'message' => '联系方式不能为空'],
+            ['tel', 'number', 'min' => 10000000000, 'max' => 19999999999, 'message' => "请填写正确的联系方式", 'tooBig'=>"请填写正确的联系方式",'tooSmall'=>"请填写正确的联系方式" ],
         ];
     }
 
@@ -45,18 +47,18 @@ class SignupForm extends Model
      */
     public function signup()
     {
-        if (!$this->validate()) {
-            return null;
-        }
+        // if (!$this->validate()) {
+        //     return null;
+        // }
         
         $user = new User();
-        $user->username = $this->username;
-        $user->email = $this->email;
+        $user->account = $this->account;
         $user->setPassword($this->password);
-        $user->generateAuthKey();
-        $user->generateEmailVerificationToken();
+        $user->setUsername($this->username);
+        $user->setTel($this->tel);
 
-        return $user->save() && $this->sendEmail($user);
+        $user->generateAuthKey();
+        return $user->save();
     }
 
     /**
@@ -64,17 +66,17 @@ class SignupForm extends Model
      * @param User $user user model to with email should be send
      * @return bool whether the email was sent
      */
-    protected function sendEmail($user)
-    {
-        return Yii::$app
-            ->mailer
-            ->compose(
-                ['html' => 'emailVerify-html', 'text' => 'emailVerify-text'],
-                ['user' => $user]
-            )
-            ->setFrom([Yii::$app->params['supportEmail'] => Yii::$app->name . ' robot'])
-            ->setTo($this->email)
-            ->setSubject('Account registration at ' . Yii::$app->name)
-            ->send();
-    }
+    // protected function sendEmail($user)
+    // {
+    //     return Yii::$app
+    //         ->mailer
+    //         ->compose(
+    //             ['html' => 'emailVerify-html', 'text' => 'emailVerify-text'],
+    //             ['user' => $user]
+    //         )
+    //         ->setFrom([Yii::$app->params['supportEmail'] => Yii::$app->name . ' robot'])
+    //         ->setTo($this->email)
+    //         ->setSubject('Account registration at ' . Yii::$app->name)
+    //         ->send();
+    // }
 }
