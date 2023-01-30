@@ -22,7 +22,7 @@ AppAsset_b::register($this);
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="description" content="Start your development with LeadMark landing page.">
             <meta name="author" content="Devcrud">
-            <title>LeadMark Landing page | Free Bootstrap 4.3.x landing page</title>
+            <title>俄乌战争快讯</title>
             <!-- font icons -->
             <link rel="stylesheet" href="assets/frontend/leadmark/public_html/assets/vendors/themify-icons/css/themify-icons.css">
             <!-- Bootstrap + LeadMark main styles -->
