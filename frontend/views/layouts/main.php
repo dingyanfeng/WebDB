@@ -116,8 +116,8 @@ AppAsset_b::register($this);
                     </div>
                 </nav>
                 <div class="overlay">
-                    <h1 class="subtitle">LeadMark Landing Page</h1>
-                    <h1 class="title">We Are Creative</h1>  
+                    <h1 class="subtitle">我们在关注</h1>
+                    <h1 class="title">俄乌战争快讯</h1>  
                 </div>  
                 <div class="shape">
                     <svg viewBox="0 0 1500 200">
