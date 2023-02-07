@@ -91,9 +91,9 @@ AppAsset_b::register($this);
                                     $menuItems[] = ['label' => '修改信息', 'url' => ['/site/modify']];
 
 
-                                    if (Yii::$app->user->identity->type == 1 || Yii::$app->user->identity->type == 2 || \common\models\TeamMember::isMember(Yii::$app->user->identity->account)) {
-                                        $menuItems[] = ['label' => '后台管理', 'url' => ['/backend/site/index']];
-                                    }
+                                    // if (Yii::$app->user->identity->type == 1 || Yii::$app->user->identity->type == 2 || \common\models\TeamMember::isMember(Yii::$app->user->identity->account)) {
+                                    //     $menuItems[] = ['label' => '后台管理', 'url' => ['/backend/site/index']];
+                                    // }
 
                                     $menuItems[] = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li><span>"
                                         . Html::beginForm(['/site/logout'], 'post')
@@ -116,8 +116,8 @@ AppAsset_b::register($this);
                     </div>
                 </nav>
                 <div class="overlay">
-                    <h1 class="subtitle">LeadMark Landing Page</h1>
-                    <h1 class="title">We Are Creative</h1>  
+                    <h1 class="subtitle">我们在关注</h1>
+                    <h1 class="title">俄乌战争快讯</h1>  
                 </div>  
                 <div class="shape">
                     <svg viewBox="0 0 1500 200">
