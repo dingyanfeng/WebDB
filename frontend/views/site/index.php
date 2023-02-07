@@ -5,6 +5,15 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\widgets\LinkPager;
 $cnt = 2;
+
+//难民数据
+$Refugee_poland = \common\models\Refugee::findOne(['destination' => '波兰']);
+$Refugee_romania = \common\models\Refugee::findOne(['destination' => '罗马尼亚']);
+$Refugee_russia = \common\models\Refugee::findOne(['destination' => '俄罗斯']);
+$Refugee_hungary = \common\models\Refugee::findOne(['destination' => '匈牙利']);
+$Refugee_slovakia = \common\models\Refugee::findOne(['destination' => '斯洛伐克']);
+$Refugee_moldova = \common\models\Refugee::findOne(['destination' => '摩尔多瓦']);
+$Refugee_belarus = \common\models\Refugee::findOne(['destination' => '白俄罗斯']);
 // $this->title = 'My Yii Application';
 ?>
 <!-- BEGIN: .cover -->
@@ -105,109 +114,109 @@ $cnt = 2;
 <!-- Portfolio Section -->
 <section id="portfolio" class="section portfolio-section">
     <div class="container">
-        <h6 class="section-title text-center">Our Portfolio</h6>
+        <h6 class="section-title text-center">乌克兰难民去向分析</h6>
         <h6 class="section-subtitle mb-5 text-center">New stunning projects for our amazing clients</h6>
         <div class="filters">
             <a href="#" data-filter=".new" class="active">
-                New
+                Destination
             </a>
             <a href="#" data-filter=".advertising">
-                Advertising
+                None
             </a>
             <a href="#" data-filter=".branding">
-                Branding
+                None
             </a>
             <a href="#" data-filter=".web">
-                Web
+                None
             </a>
         </div>
         <div class="portfolio-container"> 
             <div class="col-md-6 col-lg-4 web new">
                 <div class="portfolio-item">
-                    <img src="assets/frontend/leadmark/public_html/assets/imgs/web-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                    <img src="assets/frontend/leadmark/public_html/assets/imgs/poland.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                     <div class="content-holder">
-                        <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/web-1.jpg"></a>
+                        <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/poland.jpg"></a>
                         <div class="text-holder">
-                            <h6 class="title">WEB</h6>
-                            <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            <h6 class="title">波兰</h6>
+                            <p class="subtitle"><?= $Refugee_poland->num ?></p>
                         </div>
                     </div>   
                 </div>             
             </div>
             <div class="col-md-6 col-lg-4 web new">
                 <div class="portfolio-item">
-                    <img src="assets/frontend/leadmark/public_html/assets/imgs/web-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                    <img src="assets/frontend/leadmark/public_html/assets/imgs/romania.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                     <div class="content-holder">
-                        <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/web-2.jpg"></a>
+                        <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/romania.jpg"></a>
                         <div class="text-holder">
-                            <h6 class="title">WEB</h6>
-                            <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            <h6 class="title">罗马尼亚</h6>
+                            <p class="subtitle"><?= $Refugee_romania->num ?></p>
                         </div>
                     </div> 
                 </div>                         
             </div>
             <div class="col-md-6 col-lg-4 advertising new">
                 <div class="portfolio-item">
-                    <img src="assets/frontend/leadmark/public_html/assets/imgs/advertising-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
+                    <img src="assets/frontend/leadmark/public_html/assets/imgs/russia.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
                     <div class="content-holder">
-                        <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/advertising-2.jpg"></a>
+                        <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/russia.jpg"></a>
                         <div class="text-holder">
-                            <h6 class="title">ADVERSTISING</h6>
-                            <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            <h6 class="title">俄罗斯</h6>
+                            <p class="subtitle"><?= $Refugee_russia->num ?></p>
                         </div>
                     </div>    
                 </div>              
             </div> 
-            <div class="col-md-6 col-lg-4 web">
+            <div class="col-md-6 col-lg-4 web new">
                 <div class="portfolio-item">
-                    <img src="assets/frontend/leadmark/public_html/assets/imgs/web-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                    <img src="assets/frontend/leadmark/public_html/assets/imgs/hungary.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                     <div class="content-holder">
-                        <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/web-4.jpg"></a>
+                        <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/hungary.jpg"></a>
                         <div class="text-holder">
-                            <h6 class="title">WEB</h6>
-                            <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            <h6 class="title">匈牙利</h6>
+                            <p class="subtitle"><?= $Refugee_hungary->num ?></p>
                         </div>
                     </div>
                 </div>                                                     
             </div>
 
-            <div class="col-md-6 col-lg-4 advertising"> 
+            <div class="col-md-6 col-lg-4 advertising new"> 
                 <div class="portfolio-item">
-                    <img src="assets/frontend/leadmark/public_html/assets/imgs/advertising-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
+                    <img src="assets/frontend/leadmark/public_html/assets/imgs/slovakia.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
                     <div class="content-holder">
-                        <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/advertising-1.jpg"></a>
+                        <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/slovakia.jpg"></a>
                         <div class="text-holder">
-                            <h6 class="title">ADVERSITING</h6>
-                            <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            <h6 class="title">斯洛伐克</h6>
+                            <p class="subtitle"><?= $Refugee_slovakia->num ?></p>
                         </div>
                     </div>
                 </div>                                                       
             </div> 
             <div class="col-md-6 col-lg-4 web new">
                 <div class="portfolio-item">
-                    <img src="assets/frontend/leadmark/public_html/assets/imgs/web-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
+                    <img src="assets/frontend/leadmark/public_html/assets/imgs/moldova.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
                     <div class="content-holder">
-                        <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/web-3.jpg"></a>
+                        <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/moldova.jpg"></a>
                         <div class="text-holder">
-                            <h6 class="title">WEB</h6>
-                            <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            <h6 class="title">摩尔多瓦</h6>
+                            <p class="subtitle"><?= $Refugee_moldova->num ?></p>
                         </div>
                     </div>
                 </div>                                                     
             </div>
             <div class="col-md-6 col-lg-4 advertising new">
                 <div class="portfolio-item">
-                    <img src="assets/frontend/leadmark/public_html/assets/imgs/advertising-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
+                    <img src="assets/frontend/leadmark/public_html/assets/imgs/belarus.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
                     <div class="content-holder">
-                        <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/advertising-3.jpg"></a>
+                        <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/belarus.jpg"></a>
                         <div class="text-holder">
-                            <h6 class="title">ADVERSITING</h6>
-                            <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            <h6 class="title">白俄罗斯</h6>
+                            <p class="subtitle"><?= $Refugee_belarus->num ?></p>
                         </div>
                     </div>
                 </div>                                                       
             </div> 
-            <div class="col-md-6 col-lg-4 advertising new"> 
+            <!-- <div class="col-md-6 col-lg-4 advertising new"> 
                 <div class="portfolio-item">
                     <img src="assets/frontend/leadmark/public_html/assets/imgs/advertising-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
                     <div class="content-holder">
@@ -279,7 +288,7 @@ $cnt = 2;
                         </div>
                     </div>
                 </div>                                                   
-            </div>
+            </div> -->
         </div>   
     </div>            
 </section>
