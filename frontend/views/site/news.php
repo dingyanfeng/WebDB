@@ -42,7 +42,7 @@ use yii\bootstrap5\ActiveForm;
   <body>
     <h1 style="text-align: center;">新闻列表</h1>
     <ul id="news-list">
-      <li><a href="site1.php">以国前总理斡旋俄乌战争曾获普京承诺不会杀害泽连斯基</a></li>
+      <li><a href="index.php?r=site%2Fsite1">以国前总理斡旋俄乌战争曾获普京承诺不会杀害泽连斯基</a></li>
       <li><a href="site2.php">担心"次级制裁" 中资银行回避对俄业务</a></li>
       <li><a href="site3.php">中国是否与俄罗斯做军火生意？海关记录说话</a></li>
       <li><a href="site4.php">乌克兰战争第二年将非常可怕</a></li>

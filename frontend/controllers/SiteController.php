@@ -175,6 +175,7 @@ class SiteController extends Controller
 
 
 
+
     /**
      *  重置信息的动作，用于修改当前的密码或者用户名
      */
@@ -286,6 +287,13 @@ class SiteController extends Controller
     {
         return $this->render('news');
     }
+
+    public function actionSite1()
+    {
+        return $this->render('site1');
+    }
+
+
 
     /**
      * Resend verification email
