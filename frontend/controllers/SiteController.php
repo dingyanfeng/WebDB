@@ -19,6 +19,7 @@ use frontend\models\ContactForm;
 use common\models\LoginForm;
 use frontend\models\SignupForm;
 
+use common\models\News;
 /**
  * Site controller
  */
@@ -240,6 +241,16 @@ class SiteController extends Controller
 
         Yii::$app->session->setFlash('error', 'Sorry, we are unable to verify your account with provided token.');
         return $this->goHome();
+    }
+
+    /**
+     * Displays news page.
+     *
+     * @return mixed
+     */
+    public function actionNews()
+    {
+        return $this->render('news');
     }
 
     /**
