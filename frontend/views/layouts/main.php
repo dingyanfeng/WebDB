@@ -59,7 +59,7 @@ AppAsset_b::register($this);
                                     <a class="nav-link" href="#about">About Us</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                                    <a class="nav-link" href="#portfolio">难民去向</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#blog">Blog</a>

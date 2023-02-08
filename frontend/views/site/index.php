@@ -115,7 +115,7 @@ $Refugee_belarus = \common\models\Refugee::findOne(['destination' => '白俄罗�
 <section id="portfolio" class="section portfolio-section">
     <div class="container">
         <h6 class="section-title text-center">乌克兰难民去向分析</h6>
-        <h6 class="section-subtitle mb-5 text-center">New stunning projects for our amazing clients</h6>
+        <h6 class="section-subtitle mb-5 text-center">Analysis of the whereabouts of Ukrainian refugees</h6>
         <div class="filters">
             <a href="#" data-filter=".new" class="active">
                 Destination
@@ -124,14 +124,11 @@ $Refugee_belarus = \common\models\Refugee::findOne(['destination' => '白俄罗�
                 Nightingale
             </a>
             <a href="#" data-filter=".branding">
-                None
-            </a>
-            <a href="#" data-filter=".web">
-                None
+                View
             </a>
         </div>
         <div class="portfolio-container"> 
-            <div class="col-md-6 col-lg-4 web new">
+            <div class="col-md-6 col-lg-4 new">
                 <div class="portfolio-item">
                     <img src="assets/frontend/leadmark/public_html/assets/imgs/poland.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                     <div class="content-holder">
@@ -143,7 +140,7 @@ $Refugee_belarus = \common\models\Refugee::findOne(['destination' => '白俄罗�
                     </div>   
                 </div>             
             </div>
-            <div class="col-md-6 col-lg-4 web new">
+            <div class="col-md-6 col-lg-4 new">
                 <div class="portfolio-item">
                     <img src="assets/frontend/leadmark/public_html/assets/imgs/romania.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                     <div class="content-holder">
@@ -167,7 +164,7 @@ $Refugee_belarus = \common\models\Refugee::findOne(['destination' => '白俄罗�
                     </div>    
                 </div>              
             </div> 
-            <div class="col-md-6 col-lg-4 web new">
+            <div class="col-md-6 col-lg-4 new">
                 <div class="portfolio-item">
                     <img src="assets/frontend/leadmark/public_html/assets/imgs/hungary.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                     <div class="content-holder">
@@ -192,7 +189,7 @@ $Refugee_belarus = \common\models\Refugee::findOne(['destination' => '白俄罗�
                     </div>
                 </div>                                                       
             </div> 
-            <div class="col-md-6 col-lg-4 web new">
+            <div class="col-md-6 col-lg-4 new">
                 <div class="portfolio-item">
                     <img src="assets/frontend/leadmark/public_html/assets/imgs/moldova.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
                     <div class="content-holder">
@@ -219,24 +216,6 @@ $Refugee_belarus = \common\models\Refugee::findOne(['destination' => '白俄罗�
             <div class="col-md-6 col-lg-4 advertising">
                 <div id="container" style="height: 600%;width: 300%"></div>
                 <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.min.js"></script>
-                <!-- Uncomment this line if you want to dataTool extension
-                <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/extension/dataTool.min.js"></script>
-                -->
-                <!-- Uncomment this line if you want to use gl extension
-                <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
-                -->
-                <!-- Uncomment this line if you want to echarts-stat extension
-                <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
-                -->
-                <!-- Uncomment this line if you want to use map
-                <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
-                <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
-                -->
-                <!-- Uncomment these two lines if you want to use bmap extension
-                <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
-                <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/extension/bmap.min.js"></script>
-                -->
-
                 <script type="text/javascript">
                     var dom = document.getElementById('container');
                     var myChart = echarts.init(dom, null, {
@@ -290,79 +269,12 @@ $Refugee_belarus = \common\models\Refugee::findOne(['destination' => '白俄罗�
                     window.addEventListener('resize', myChart.resize);
                 </script>
             </div>
-            <!-- <div class="col-md-6 col-lg-4 advertising new"> 
-                <div class="portfolio-item">
-                    <img src="assets/frontend/leadmark/public_html/assets/imgs/advertising-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
-                    <div class="content-holder">
-                        <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/advertising-4.jpg"></a>
-                        <div class="text-holder">
-                            <h6 class="title">ADVERTISING</h6>
-                            <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                        </div>
-                    </div>
-                </div>
-                        
-            </div> 
-            <div class="col-md-6 col-lg-4 branding new">
-                <div class="portfolio-item">
-                    <img src="assets/frontend/leadmark/public_html/assets/imgs/branding-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                        
-                    <div class="content-holder">
-                        <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/branding-1.jpg"></a>
-                        <div class="text-holder">
-                            <h6 class="title">BRANDING</h6>
-                            <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                        </div>
-                    </div> 
-                </div>
-            </div> 
+            <div class="col-md-6 col-lg-7 branding">
+                <img src="assets/frontend/leadmark/public_html/assets/imgs/EW_refugee.jpg" class="img-fluid">
+            </div>
             <div class="col-md-6 col-lg-4 branding">
-                <div class="portfolio-item">
-                    <img src="assets/frontend/leadmark/public_html/assets/imgs/branding-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
-                    <div class="content-holder">
-                        <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/branding-2.jpg"></a>
-                        <div class="text-holder">
-                            <h6 class="title">BRANDING</h6>
-                            <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                        </div>
-                    </div>
-                </div>                                                     
-            </div> 
-            <div class="col-md-6 col-lg-4 branding new">
-                <div class="portfolio-item">
-                    <img src="assets/frontend/leadmark/public_html/assets/imgs/branding-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
-                    <div class="content-holder">
-                        <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/branding-3.jpg"></a>
-                        <div class="text-holder">
-                            <h6 class="title">BRANDING</h6>
-                            <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                        </div>
-                    </div>
-                </div>                                                    
-            </div> 
-            <div class="col-md-6 col-lg-4 branding">
-                <div class="portfolio-item">
-                    <img src="assets/frontend/leadmark/public_html/assets/imgs/branding-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                      
-                    <div class="content-holder">
-                        <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/branding-4.jpg"></a>
-                        <div class="text-holder">
-                            <h6 class="title">BRANDING</h6>
-                            <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                        </div>
-                    </div>
-                </div>                                                      
-            </div> 
-            <div class="col-md-6 col-lg-4 branding">
-                <div class="portfolio-item">
-                    <img src="assets/frontend/leadmark/public_html/assets/imgs/branding-5.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">          
-                    <div class="content-holder">
-                        <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/branding-5.jpg"></a>
-                        <div class="text-holder">
-                            <h6 class="title">BRANDING</h6>
-                            <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                        </div>
-                    </div>
-                </div>                                                   
-            </div> -->
+                <a href="https://www.aljazeera.com/">图片来源:半岛电视台</a>
+            </div>
         </div>   
     </div>            
 </section>
@@ -411,59 +323,6 @@ $Refugee_belarus = \common\models\Refugee::findOne(['destination' => '白俄罗�
     </div>
 </section>
 <!-- End of Blog Section -->
-
-<!-- Testmonial Section -->
-<section class="section" id="testmonial">
-    <div class="container">
-        <h6 class="section-title text-center mb-0">Testmonials</h6>
-        <h6 class="section-subtitle mb-5 text-center">What Our Clients Says</h6>
-        <div class="row">
-            <div class="col-md-4 my-3 my-md-0">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="media align-items-center mb-3">
-                            <img class="mr-3" src="assets/frontend/leadmark/public_html/assets/imgs/avatar.jpg" alt="">
-                            <div class="media-body">
-                                <h6 class="mt-1 mb-0">John Doe</h6>
-                                <small class="text-muted mb-0">Business Analyst</small>     
-                            </div>
-                        </div>
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id dicta reiciendis itaque.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 my-3 my-md-0">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="media align-items-center mb-3">
-                            <img class="mr-3" src="assets/frontend/leadmark/public_html/assets/imgs/avatar-1.jpg" alt="">
-                            <div class="media-body">
-                                <h6 class="mt-1 mb-0">Maria Garcia</h6>
-                                <small class="text-muted mb-0">Insurance Agent</small>      
-                            </div>
-                        </div>
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id dicta reiciendis itaque.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 my-3 my-md-0">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="media align-items-center mb-3">
-                            <img class="mr-3" src="assets/frontend/leadmark/public_html/assets/imgs/avatar-2.jpg" alt="">
-                            <div class="media-body">
-                                <h6 class="mt-1 mb-0">Mason Miller</h6>
-                                <small class="text-muted mb-0">Residential Appraiser</small>        
-                            </div>
-                        </div>
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id dicta reiciendis itaque.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End of Testmonial Section -->
 
 <!-- Contact Section -->
 <section id="contact" class="section has-img-bg pb-0">
