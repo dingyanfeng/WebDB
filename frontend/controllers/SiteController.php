@@ -293,6 +293,26 @@ class SiteController extends Controller
         return $this->render('site1');
     }
 
+    public function actionSite2()
+    {
+        return $this->render('site2');
+    }
+
+    public function actionSite3()
+    {
+        return $this->render('site3');
+    }
+
+    public function actionSite4()
+    {
+        return $this->render('site4');
+    }
+
+    public function actionSite5()
+    {
+        return $this->render('site5');
+    }
+
 
 
     /**
