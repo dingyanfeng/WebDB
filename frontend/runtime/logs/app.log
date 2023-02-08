@@ -2919,3 +2919,86 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1675768244.6718
     'REQUEST_TIME' => 1675768244
 ]
+2023-02-08 09:32:37 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/news in C:\xampp\htdocs\Yii\advanced\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\xampp\htdocs\Yii\advanced\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('news', Array)
+#1 C:\xampp\htdocs\Yii\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/news', Array)
+#2 C:\xampp\htdocs\Yii\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\Yii\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\Yii\advanced\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\Yii\advanced\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\Yii\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2023-02-08 09:32:37 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/news'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Pycharm-a1a598e2' => '7cdbba08-9ef7-4e18-a9af-25f24e5a2543'
+    'bxHV_2132_saltkey' => 'V0Dm5W4U'
+    'bxHV_2132_lastvisit' => '1674552999'
+    'bxHV_2132_ulastactivity' => '6ec5+t5bqNTCWXu7tkpnEXMJoSczxynjc3j+PASHlqrfzwUL4gu7'
+    'bxHV_2132_lastcheckfeed' => '1|1674556752'
+    'bxHV_2132_nofavfid' => '1'
+    '_csrf-frontend' => 'e982500f37443069558201a95e78a25a2109f7785015ce33eb00272d7b07fb0da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aJNdXbFOLGnd_hIJtPTpo5b1qBCsMLuj\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.46'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/advanced/frontend/web/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'Pycharm-a1a598e2=7cdbba08-9ef7-4e18-a9af-25f24e5a2543; bxHV_2132_saltkey=V0Dm5W4U; bxHV_2132_lastvisit=1674552999; bxHV_2132_ulastactivity=6ec5%2Bt5bqNTCWXu7tkpnEXMJoSczxynjc3j%2BPASHlqrfzwUL4gu7; bxHV_2132_lastcheckfeed=1%7C1674556752; bxHV_2132_nofavfid=1; _csrf-frontend=e982500f37443069558201a95e78a25a2109f7785015ce33eb00272d7b07fb0da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aJNdXbFOLGnd_hIJtPTpo5b1qBCsMLuj%22%3B%7D'
+    'PATH' => 'E:\\Anaconda_;E:\\Anaconda_\\Library\\mingw-w64\\bin;E:\\Anaconda_\\Library\\usr\\bin;E:\\Anaconda_\\Library\\bin;E:\\Anaconda_\\Scripts;C:\\Program Files\\Microsoft MPI\\Bin\\;E:\\NKU\\tools\\apache-maven-3.6.1\\bin;E:\\NKU\\data\\hadoop\\windows\\hadoop-3.1.0\\bin;D:\\java\\jdk1.8\\bin;D:\\java\\jdk1.8-jre\\bin;D:\\TDM-GCC-64\\TDM-GCC-64\\bin;D:\\TDM-GCC\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\Strawberry\\c\\bin;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Program Files\\MATLAB\\R2016b\\runtime\\win64;D:\\Program Files\\MATLAB\\R2016b\\bin;D:\\Program Files\\MATLAB\\R2016b\\polyspace\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\anaconda;D:\\anaconda\\Scripts;D:\\anaconda\\Library\\bin;D:\\anaconda\\Library\\mingw-w64\\bin;D:\\Python;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.0\\;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files\\Git\\cmd;D:\\java\\bin;C:\\Program Files (x86)\\ZeroTier\\One\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\dingyanfeng\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\VScode\\Microsoft VS Code\\bin;D:\\pycharm\\PyCharm Community Edition 2021.2.2\\bin;;C:\\Users\\dingyanfeng\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/Yii'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/Yii'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Yii/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '62755'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fnews'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fnews'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1675845157.2394
+    'REQUEST_TIME' => 1675845157
+]
