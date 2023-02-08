@@ -121,7 +121,7 @@ $Refugee_belarus = \common\models\Refugee::findOne(['destination' => '白俄罗�
                 Destination
             </a>
             <a href="#" data-filter=".advertising">
-                None
+                Nightingale
             </a>
             <a href="#" data-filter=".branding">
                 None
@@ -138,7 +138,7 @@ $Refugee_belarus = \common\models\Refugee::findOne(['destination' => '白俄罗�
                         <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/poland.jpg"></a>
                         <div class="text-holder">
                             <h6 class="title">波兰</h6>
-                            <p class="subtitle"><?= $Refugee_poland->num ?></p>
+                            <p class="subtitle"><?= number_format($Refugee_poland->num) ?></p>
                         </div>
                     </div>   
                 </div>             
@@ -150,19 +150,19 @@ $Refugee_belarus = \common\models\Refugee::findOne(['destination' => '白俄罗�
                         <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/romania.jpg"></a>
                         <div class="text-holder">
                             <h6 class="title">罗马尼亚</h6>
-                            <p class="subtitle"><?= $Refugee_romania->num ?></p>
+                            <p class="subtitle"><?= number_format($Refugee_romania->num) ?></p>
                         </div>
                     </div> 
                 </div>                         
             </div>
-            <div class="col-md-6 col-lg-4 advertising new">
+            <div class="col-md-6 col-lg-4 new">
                 <div class="portfolio-item">
                     <img src="assets/frontend/leadmark/public_html/assets/imgs/russia.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
                     <div class="content-holder">
                         <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/russia.jpg"></a>
                         <div class="text-holder">
                             <h6 class="title">俄罗斯</h6>
-                            <p class="subtitle"><?= $Refugee_russia->num ?></p>
+                            <p class="subtitle"><?= number_format($Refugee_russia->num) ?></p>
                         </div>
                     </div>    
                 </div>              
@@ -174,20 +174,20 @@ $Refugee_belarus = \common\models\Refugee::findOne(['destination' => '白俄罗�
                         <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/hungary.jpg"></a>
                         <div class="text-holder">
                             <h6 class="title">匈牙利</h6>
-                            <p class="subtitle"><?= $Refugee_hungary->num ?></p>
+                            <p class="subtitle"><?= number_format($Refugee_hungary->num) ?></p>
                         </div>
                     </div>
                 </div>                                                     
             </div>
 
-            <div class="col-md-6 col-lg-4 advertising new"> 
+            <div class="col-md-6 col-lg-4 new"> 
                 <div class="portfolio-item">
                     <img src="assets/frontend/leadmark/public_html/assets/imgs/slovakia.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
                     <div class="content-holder">
                         <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/slovakia.jpg"></a>
                         <div class="text-holder">
                             <h6 class="title">斯洛伐克</h6>
-                            <p class="subtitle"><?= $Refugee_slovakia->num ?></p>
+                            <p class="subtitle"><?= number_format($Refugee_slovakia->num) ?></p>
                         </div>
                     </div>
                 </div>                                                       
@@ -199,23 +199,97 @@ $Refugee_belarus = \common\models\Refugee::findOne(['destination' => '白俄罗�
                         <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/moldova.jpg"></a>
                         <div class="text-holder">
                             <h6 class="title">摩尔多瓦</h6>
-                            <p class="subtitle"><?= $Refugee_moldova->num ?></p>
+                            <p class="subtitle"><?= number_format($Refugee_moldova->num) ?></p>
                         </div>
                     </div>
                 </div>                                                     
             </div>
-            <div class="col-md-6 col-lg-4 advertising new">
+            <div class="col-md-6 col-lg-4 new">
                 <div class="portfolio-item">
                     <img src="assets/frontend/leadmark/public_html/assets/imgs/belarus.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
                     <div class="content-holder">
                         <a class="img-popup" href="assets/frontend/leadmark/public_html/assets/imgs/belarus.jpg"></a>
                         <div class="text-holder">
                             <h6 class="title">白俄罗斯</h6>
-                            <p class="subtitle"><?= $Refugee_belarus->num ?></p>
+                            <p class="subtitle"><?= number_format($Refugee_belarus->num) ?></p>
                         </div>
                     </div>
                 </div>                                                       
             </div> 
+            <div class="col-md-6 col-lg-4 advertising">
+                <div id="container" style="height: 600%;width: 300%"></div>
+                <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.min.js"></script>
+                <!-- Uncomment this line if you want to dataTool extension
+                <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/extension/dataTool.min.js"></script>
+                -->
+                <!-- Uncomment this line if you want to use gl extension
+                <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+                -->
+                <!-- Uncomment this line if you want to echarts-stat extension
+                <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+                -->
+                <!-- Uncomment this line if you want to use map
+                <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+                <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+                -->
+                <!-- Uncomment these two lines if you want to use bmap extension
+                <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+                <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/extension/bmap.min.js"></script>
+                -->
+
+                <script type="text/javascript">
+                    var dom = document.getElementById('container');
+                    var myChart = echarts.init(dom, null, {
+                    renderer: 'canvas',
+                    useDirtyRect: false
+                    });
+                    var app = {};
+                    
+                    var option;
+
+                    option = {
+                    legend: {
+                        top: 'bottom'
+                    },
+                    toolbox: {
+                        show: true,
+                        feature: {
+                        mark: { show: true },
+                        dataView: { show: true, readOnly: false },
+                        restore: { show: true },
+                        saveAsImage: { show: true }
+                        }
+                    },
+                    series: [
+                        {
+                        name: 'Nightingale Chart',
+                        type: 'pie',
+                        radius: [50, 250],
+                        center: ['50%', '50%'],
+                        roseType: 'area',
+                        itemStyle: {
+                            borderRadius: 7
+                        },
+                        data: [
+                            { value: <?= $Refugee_poland->num ?>, name: '波兰' },
+                            { value: <?= $Refugee_romania->num ?>, name: '罗马尼亚' },
+                            { value: <?= $Refugee_russia->num ?>, name: '俄罗斯' },
+                            { value: <?= $Refugee_hungary->num ?>, name: '匈牙利' },
+                            { value: <?= $Refugee_slovakia->num ?>, name: '斯洛伐克' },
+                            { value: <?= $Refugee_moldova->num ?>, name: '摩尔多瓦' },
+                            { value: <?= $Refugee_belarus->num ?>, name: '白俄罗斯' }
+                        ]
+                        }
+                    ]
+                    };
+
+                    if (option && typeof option === 'object') {
+                    myChart.setOption(option);
+                    }
+
+                    window.addEventListener('resize', myChart.resize);
+                </script>
+            </div>
             <!-- <div class="col-md-6 col-lg-4 advertising new"> 
                 <div class="portfolio-item">
                     <img src="assets/frontend/leadmark/public_html/assets/imgs/advertising-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
@@ -293,6 +367,8 @@ $Refugee_belarus = \common\models\Refugee::findOne(['destination' => '白俄罗�
     </div>            
 </section>
 <!-- End of portfolio section -->
+
+
 
 <!-- Blog Section -->
 <section class="section" id="blog">
