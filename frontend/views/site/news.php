@@ -1,3 +1,14 @@
+<?php
+
+/** @var yii\web\View $this */
+/** @var yii\bootstrap5\ActiveForm $form */
+/** @var \common\models\news $model */
+
+use yii\bootstrap5\Html;
+use yii\bootstrap5\ActiveForm;
+
+?>
+
 
 <html>
   <head>
