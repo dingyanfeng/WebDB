@@ -44,22 +44,17 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
     </div>
-    <div class="custom-breadcrumns-23195 border-bottom">
+    <center><div class="custom-breadcrumns-23195 border-bottom">
         <div class="container">
             <a href="<?php echo Yii::$app->getHomeUrl(); ?>">主页</a>
             <span class="mx-3 icon-keyboard_arrow_right"></span>
             <span class="current">修改信息</span>
         </div>
-    </div>
+    </div></center>
     <!-- END: .cover -->
     <div class="container">
         <p></p>
-        <div class="row">
-            <div class="col">
-                <h3 class="section-heading line-primary">实时更新，保持联络</h3>
-            </div>
-        </div>
-        <div class="row justify-content-between">
+        <div class="row justify-content-center">
             <div class="col-lg-6 mb-4 mb-lg-0">
 
 
