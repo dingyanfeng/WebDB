@@ -18,6 +18,7 @@ use frontend\models\ContactForm;
 
 use common\models\LoginForm;
 use frontend\models\SignupForm;
+use frontend\models\ModifyForm;
 
 use common\models\News;
 /**
@@ -170,6 +171,39 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+
+
+
+
+    /**
+     *  重置信息的动作，用于修改当前的密码或者用户名
+     */
+    public function actionModify()
+    {
+        if (Yii::$app->user->isGuest) {
+            return $this->goHome();
+        }
+        $model = new ModifyForm();
+        if ($model->load(Yii::$app->request->post())) {
+            if ($model->setMyUser()) {
+                $model->setInfo();
+                Yii::$app->user->logout();
+                return $this->redirect(array('/site/index',
+                    'message' => "信息修改成功，请重新登录。"
+                ));
+            } else {
+                return $this->render('modify', [
+                    'model' => $model,
+                    'message' => "用户名或密码错误"
+                ]);
+            }
+        }
+        return $this->render('modify', [
+            'model' => $model,
+        ]);
+    }
+
+    
 
     /**
      * Requests password reset.
