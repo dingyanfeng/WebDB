@@ -5,8 +5,8 @@ return [
         'db' => [
             'class' => \yii\db\Connection::class,
             'dsn' => 'mysql:host=localhost:3306;dbname=yii2advanced',
-            'username' => 'cjnn',
-            'password' => 'chengjianuo',
+            'username' => 'root',
+            'password' => 'wkqwan1314zhc',
             'charset' => 'utf8',
         ],
         'mailer' => [
