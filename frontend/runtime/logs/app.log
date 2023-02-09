@@ -7163,3 +7163,1334 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1675937000.4758
     'REQUEST_TIME' => 1675937000
 ]
+2023-02-09 17:21:35 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $model in C:\xampp\htdocs\webDB\frontend\views\site\comment1.php:42
+Stack trace:
+#0 C:\xampp\htdocs\webDB\frontend\views\site\comment1.php(42): yii\base\ErrorHandler->handleError(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#4 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('comment1', Array, Object(frontend\controllers\SiteController))
+#5 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(322): yii\base\Controller->render('comment1')
+#6 [internal function]: frontend\controllers\SiteController->actionComment1()
+#7 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('comment1', Array)
+#10 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/comment1', Array)
+#11 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\webDB\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2023-02-09 17:21:35 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/comment1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '221acae5c119d28510d7e45ee3cd861454fa124411c2bb1edf0cff3a47139bc0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZozqY_I9kB9iP1PYatnUShW75iQDNY-l\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/webDB/frontend/web/index.php?r=site%2Fsite1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => '_csrf-frontend=221acae5c119d28510d7e45ee3cd861454fa124411c2bb1edf0cff3a47139bc0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ZozqY_I9kB9iP1PYatnUShW75iQDNY-l%22%3B%7D'
+    'PATH' => 'D:\\Environment\\apache-maven-3.6.1\\apache-maven-3.6.1\\bin;D:\\Environment\\jdk1.8.0_311\\bin;D:\\Environment\\jdk1.8.0_311\\jre\\bin;D:\\Environment\\hadoop-3.1.0\\bin;E:\\Program Files\\JetBrains\\CLion 2021.3.4\\bin\\mingw\\bin;C:\\TDM-GCC-64\\bin;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\usr\\bin;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Anaconda3;C:\\ProgramData\\Anaconda3\\Scripts;C:\\ProgramData\\Anaconda3\\Library\\bin;C:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramFiles\\opencv\\build\\x64\\vc15\\bin;C:\\Program Files (x86)\\mingw64\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;D:\\ffmpeg\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.1\\;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\lib\\x64;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\include;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\extras\\CUPTI\\lib64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Users\\yukhu\\.conda\\envs\\open-mmlab\\Scripts;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\ProgramData\\NVIDIA Corporation\\CUDA Samples\\v11.5;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\Hostx64\\x64;C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2021.3.3\\target-windows-x64;C:\\jython2.7.3\\bin;C:\\xampp\\php\\php.exe;C:\\xampp\\php;C:\\composer;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/webDB/frontend/web/index.php'
+    'REMOTE_PORT' => '52657'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcomment1'
+    'REQUEST_URI' => '/webDB/frontend/web/index.php?r=site%2Fcomment1'
+    'SCRIPT_NAME' => '/webDB/frontend/web/index.php'
+    'PHP_SELF' => '/webDB/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1675959695.3208
+    'REQUEST_TIME' => 1675959695
+]
+2023-02-09 17:22:51 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $model in C:\xampp\htdocs\webDB\frontend\views\site\comment1.php:43
+Stack trace:
+#0 C:\xampp\htdocs\webDB\frontend\views\site\comment1.php(43): yii\base\ErrorHandler->handleError(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#4 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('comment1', Array, Object(frontend\controllers\SiteController))
+#5 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(322): yii\base\Controller->render('comment1')
+#6 [internal function]: frontend\controllers\SiteController->actionComment1()
+#7 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('comment1', Array)
+#10 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/comment1', Array)
+#11 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\webDB\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2023-02-09 17:22:51 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/comment1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '221acae5c119d28510d7e45ee3cd861454fa124411c2bb1edf0cff3a47139bc0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZozqY_I9kB9iP1PYatnUShW75iQDNY-l\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/webDB/frontend/web/index.php?r=site%2Fsite1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => '_csrf-frontend=221acae5c119d28510d7e45ee3cd861454fa124411c2bb1edf0cff3a47139bc0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ZozqY_I9kB9iP1PYatnUShW75iQDNY-l%22%3B%7D'
+    'PATH' => 'D:\\Environment\\apache-maven-3.6.1\\apache-maven-3.6.1\\bin;D:\\Environment\\jdk1.8.0_311\\bin;D:\\Environment\\jdk1.8.0_311\\jre\\bin;D:\\Environment\\hadoop-3.1.0\\bin;E:\\Program Files\\JetBrains\\CLion 2021.3.4\\bin\\mingw\\bin;C:\\TDM-GCC-64\\bin;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\usr\\bin;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Anaconda3;C:\\ProgramData\\Anaconda3\\Scripts;C:\\ProgramData\\Anaconda3\\Library\\bin;C:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramFiles\\opencv\\build\\x64\\vc15\\bin;C:\\Program Files (x86)\\mingw64\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;D:\\ffmpeg\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.1\\;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\lib\\x64;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\include;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\extras\\CUPTI\\lib64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Users\\yukhu\\.conda\\envs\\open-mmlab\\Scripts;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\ProgramData\\NVIDIA Corporation\\CUDA Samples\\v11.5;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\Hostx64\\x64;C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2021.3.3\\target-windows-x64;C:\\jython2.7.3\\bin;C:\\xampp\\php\\php.exe;C:\\xampp\\php;C:\\composer;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/webDB/frontend/web/index.php'
+    'REMOTE_PORT' => '52851'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcomment1'
+    'REQUEST_URI' => '/webDB/frontend/web/index.php?r=site%2Fcomment1'
+    'SCRIPT_NAME' => '/webDB/frontend/web/index.php'
+    'PHP_SELF' => '/webDB/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1675959771.7066
+    'REQUEST_TIME' => 1675959771
+]
+2023-02-09 17:27:08 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\webDB\frontend\views\site\comment.php in C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#1 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('comment', Array, Object(frontend\controllers\SiteController))
+#2 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(340): yii\base\Controller->render('comment', Array)
+#3 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(346): frontend\controllers\SiteController->actionComment(1)
+#4 [internal function]: frontend\controllers\SiteController->actionComment1()
+#5 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('comment1', Array)
+#8 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/comment1', Array)
+#9 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\webDB\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2023-02-09 17:27:08 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][info][application] $_GET = [
+    'r' => 'site/comment1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'rojfjp6qrls1kq9mfn5ad2u8bv'
+    '_csrf-frontend' => 'c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Thank you for registration. Please check your inbox for verification email.'
+    '__id' => '123456789012345678'
+    '__authKey' => 'ddcCEJsZAUQ5Op2ceA-o8UeO8PyP3V0N'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/webDB/frontend/web/index.php?r=site%2Fsite1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=rojfjp6qrls1kq9mfn5ad2u8bv; _csrf-frontend=c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT%22%3B%7D'
+    'PATH' => 'D:\\Environment\\apache-maven-3.6.1\\apache-maven-3.6.1\\bin;D:\\Environment\\jdk1.8.0_311\\bin;D:\\Environment\\jdk1.8.0_311\\jre\\bin;D:\\Environment\\hadoop-3.1.0\\bin;E:\\Program Files\\JetBrains\\CLion 2021.3.4\\bin\\mingw\\bin;C:\\TDM-GCC-64\\bin;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\usr\\bin;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Anaconda3;C:\\ProgramData\\Anaconda3\\Scripts;C:\\ProgramData\\Anaconda3\\Library\\bin;C:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramFiles\\opencv\\build\\x64\\vc15\\bin;C:\\Program Files (x86)\\mingw64\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;D:\\ffmpeg\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.1\\;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\lib\\x64;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\include;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\extras\\CUPTI\\lib64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Users\\yukhu\\.conda\\envs\\open-mmlab\\Scripts;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\ProgramData\\NVIDIA Corporation\\CUDA Samples\\v11.5;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\Hostx64\\x64;C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2021.3.3\\target-windows-x64;C:\\jython2.7.3\\bin;C:\\xampp\\php\\php.exe;C:\\xampp\\php;C:\\composer;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/webDB/frontend/web/index.php'
+    'REMOTE_PORT' => '53478'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcomment1'
+    'REQUEST_URI' => '/webDB/frontend/web/index.php?r=site%2Fcomment1'
+    'SCRIPT_NAME' => '/webDB/frontend/web/index.php'
+    'PHP_SELF' => '/webDB/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1675960028.4107
+    'REQUEST_TIME' => 1675960028
+]
+2023-02-09 17:28:10 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $id in C:\xampp\htdocs\webDB\frontend\views\site\comment.php:20
+Stack trace:
+#0 C:\xampp\htdocs\webDB\frontend\views\site\comment.php(20): yii\base\ErrorHandler->handleError(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#4 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('comment', Array, Object(frontend\controllers\SiteController))
+#5 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(340): yii\base\Controller->render('comment', Array)
+#6 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(346): frontend\controllers\SiteController->actionComment(1)
+#7 [internal function]: frontend\controllers\SiteController->actionComment1()
+#8 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('comment1', Array)
+#11 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/comment1', Array)
+#12 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\webDB\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2023-02-09 17:28:10 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][info][application] $_GET = [
+    'r' => 'site/comment1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'rojfjp6qrls1kq9mfn5ad2u8bv'
+    '_csrf-frontend' => 'c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Thank you for registration. Please check your inbox for verification email.'
+    '__id' => '123456789012345678'
+    '__authKey' => 'ddcCEJsZAUQ5Op2ceA-o8UeO8PyP3V0N'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/webDB/frontend/web/index.php?r=site%2Fsite1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=rojfjp6qrls1kq9mfn5ad2u8bv; _csrf-frontend=c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT%22%3B%7D'
+    'PATH' => 'D:\\Environment\\apache-maven-3.6.1\\apache-maven-3.6.1\\bin;D:\\Environment\\jdk1.8.0_311\\bin;D:\\Environment\\jdk1.8.0_311\\jre\\bin;D:\\Environment\\hadoop-3.1.0\\bin;E:\\Program Files\\JetBrains\\CLion 2021.3.4\\bin\\mingw\\bin;C:\\TDM-GCC-64\\bin;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\usr\\bin;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Anaconda3;C:\\ProgramData\\Anaconda3\\Scripts;C:\\ProgramData\\Anaconda3\\Library\\bin;C:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramFiles\\opencv\\build\\x64\\vc15\\bin;C:\\Program Files (x86)\\mingw64\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;D:\\ffmpeg\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.1\\;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\lib\\x64;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\include;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\extras\\CUPTI\\lib64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Users\\yukhu\\.conda\\envs\\open-mmlab\\Scripts;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\ProgramData\\NVIDIA Corporation\\CUDA Samples\\v11.5;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\Hostx64\\x64;C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2021.3.3\\target-windows-x64;C:\\jython2.7.3\\bin;C:\\xampp\\php\\php.exe;C:\\xampp\\php;C:\\composer;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/webDB/frontend/web/index.php'
+    'REMOTE_PORT' => '53730'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcomment1'
+    'REQUEST_URI' => '/webDB/frontend/web/index.php?r=site%2Fcomment1'
+    'SCRIPT_NAME' => '/webDB/frontend/web/index.php'
+    'PHP_SELF' => '/webDB/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1675960090.1038
+    'REQUEST_TIME' => 1675960090
+]
+2023-02-09 17:29:53 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\webDB\frontend\views\site\comment.php in C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#1 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('comment', Array, Object(frontend\controllers\SiteController))
+#2 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(340): yii\base\Controller->render('comment', Array)
+#3 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(346): frontend\controllers\SiteController->actionComment(1)
+#4 [internal function]: frontend\controllers\SiteController->actionComment1()
+#5 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('comment1', Array)
+#8 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/comment1', Array)
+#9 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\webDB\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2023-02-09 17:29:53 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][info][application] $_GET = [
+    'r' => 'site/comment1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'rojfjp6qrls1kq9mfn5ad2u8bv'
+    '_csrf-frontend' => 'c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Thank you for registration. Please check your inbox for verification email.'
+    '__id' => '123456789012345678'
+    '__authKey' => 'ddcCEJsZAUQ5Op2ceA-o8UeO8PyP3V0N'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/webDB/frontend/web/index.php?r=site%2Fsite1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=rojfjp6qrls1kq9mfn5ad2u8bv; _csrf-frontend=c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT%22%3B%7D'
+    'PATH' => 'D:\\Environment\\apache-maven-3.6.1\\apache-maven-3.6.1\\bin;D:\\Environment\\jdk1.8.0_311\\bin;D:\\Environment\\jdk1.8.0_311\\jre\\bin;D:\\Environment\\hadoop-3.1.0\\bin;E:\\Program Files\\JetBrains\\CLion 2021.3.4\\bin\\mingw\\bin;C:\\TDM-GCC-64\\bin;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\usr\\bin;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Anaconda3;C:\\ProgramData\\Anaconda3\\Scripts;C:\\ProgramData\\Anaconda3\\Library\\bin;C:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramFiles\\opencv\\build\\x64\\vc15\\bin;C:\\Program Files (x86)\\mingw64\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;D:\\ffmpeg\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.1\\;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\lib\\x64;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\include;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\extras\\CUPTI\\lib64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Users\\yukhu\\.conda\\envs\\open-mmlab\\Scripts;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\ProgramData\\NVIDIA Corporation\\CUDA Samples\\v11.5;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\Hostx64\\x64;C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2021.3.3\\target-windows-x64;C:\\jython2.7.3\\bin;C:\\xampp\\php\\php.exe;C:\\xampp\\php;C:\\composer;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/webDB/frontend/web/index.php'
+    'REMOTE_PORT' => '53981'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcomment1'
+    'REQUEST_URI' => '/webDB/frontend/web/index.php?r=site%2Fcomment1'
+    'SCRIPT_NAME' => '/webDB/frontend/web/index.php'
+    'PHP_SELF' => '/webDB/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1675960193.0313
+    'REQUEST_TIME' => 1675960193
+]
+2023-02-09 17:31:19 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\webDB\frontend\views\site\comment.php in C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#1 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('comment', Array, Object(frontend\controllers\SiteController))
+#2 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(340): yii\base\Controller->render('comment', Array)
+#3 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(346): frontend\controllers\SiteController->actionComment(1)
+#4 [internal function]: frontend\controllers\SiteController->actionComment1()
+#5 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('comment1', Array)
+#8 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/comment1', Array)
+#9 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\webDB\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2023-02-09 17:31:19 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][info][application] $_GET = [
+    'r' => 'site/comment1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'rojfjp6qrls1kq9mfn5ad2u8bv'
+    '_csrf-frontend' => 'c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Thank you for registration. Please check your inbox for verification email.'
+    '__id' => '123456789012345678'
+    '__authKey' => 'ddcCEJsZAUQ5Op2ceA-o8UeO8PyP3V0N'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/webDB/frontend/web/index.php?r=site%2Fsite1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=rojfjp6qrls1kq9mfn5ad2u8bv; _csrf-frontend=c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT%22%3B%7D'
+    'PATH' => 'D:\\Environment\\apache-maven-3.6.1\\apache-maven-3.6.1\\bin;D:\\Environment\\jdk1.8.0_311\\bin;D:\\Environment\\jdk1.8.0_311\\jre\\bin;D:\\Environment\\hadoop-3.1.0\\bin;E:\\Program Files\\JetBrains\\CLion 2021.3.4\\bin\\mingw\\bin;C:\\TDM-GCC-64\\bin;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\usr\\bin;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Anaconda3;C:\\ProgramData\\Anaconda3\\Scripts;C:\\ProgramData\\Anaconda3\\Library\\bin;C:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramFiles\\opencv\\build\\x64\\vc15\\bin;C:\\Program Files (x86)\\mingw64\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;D:\\ffmpeg\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.1\\;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\lib\\x64;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\include;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\extras\\CUPTI\\lib64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Users\\yukhu\\.conda\\envs\\open-mmlab\\Scripts;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\ProgramData\\NVIDIA Corporation\\CUDA Samples\\v11.5;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\Hostx64\\x64;C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2021.3.3\\target-windows-x64;C:\\jython2.7.3\\bin;C:\\xampp\\php\\php.exe;C:\\xampp\\php;C:\\composer;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/webDB/frontend/web/index.php'
+    'REMOTE_PORT' => '54188'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcomment1'
+    'REQUEST_URI' => '/webDB/frontend/web/index.php?r=site%2Fcomment1'
+    'SCRIPT_NAME' => '/webDB/frontend/web/index.php'
+    'PHP_SELF' => '/webDB/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1675960279.1855
+    'REQUEST_TIME' => 1675960279
+]
+2023-02-09 17:34:37 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\webDB\frontend\views\site\comment.php in C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#1 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('comment', Array, Object(frontend\controllers\SiteController))
+#2 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(340): yii\base\Controller->render('comment', Array)
+#3 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(346): frontend\controllers\SiteController->actionComment(1)
+#4 [internal function]: frontend\controllers\SiteController->actionComment1()
+#5 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('comment1', Array)
+#8 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/comment1', Array)
+#9 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\webDB\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2023-02-09 17:34:37 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][info][application] $_GET = [
+    'r' => 'site/comment1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'rojfjp6qrls1kq9mfn5ad2u8bv'
+    '_csrf-frontend' => 'c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Thank you for registration. Please check your inbox for verification email.'
+    '__id' => '123456789012345678'
+    '__authKey' => 'ddcCEJsZAUQ5Op2ceA-o8UeO8PyP3V0N'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/webDB/frontend/web/index.php?r=site%2Fsite1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=rojfjp6qrls1kq9mfn5ad2u8bv; _csrf-frontend=c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT%22%3B%7D'
+    'PATH' => 'D:\\Environment\\apache-maven-3.6.1\\apache-maven-3.6.1\\bin;D:\\Environment\\jdk1.8.0_311\\bin;D:\\Environment\\jdk1.8.0_311\\jre\\bin;D:\\Environment\\hadoop-3.1.0\\bin;E:\\Program Files\\JetBrains\\CLion 2021.3.4\\bin\\mingw\\bin;C:\\TDM-GCC-64\\bin;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\usr\\bin;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Anaconda3;C:\\ProgramData\\Anaconda3\\Scripts;C:\\ProgramData\\Anaconda3\\Library\\bin;C:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramFiles\\opencv\\build\\x64\\vc15\\bin;C:\\Program Files (x86)\\mingw64\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;D:\\ffmpeg\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.1\\;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\lib\\x64;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\include;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\extras\\CUPTI\\lib64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Users\\yukhu\\.conda\\envs\\open-mmlab\\Scripts;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\ProgramData\\NVIDIA Corporation\\CUDA Samples\\v11.5;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\Hostx64\\x64;C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2021.3.3\\target-windows-x64;C:\\jython2.7.3\\bin;C:\\xampp\\php\\php.exe;C:\\xampp\\php;C:\\composer;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/webDB/frontend/web/index.php'
+    'REMOTE_PORT' => '54639'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcomment1'
+    'REQUEST_URI' => '/webDB/frontend/web/index.php?r=site%2Fcomment1'
+    'SCRIPT_NAME' => '/webDB/frontend/web/index.php'
+    'PHP_SELF' => '/webDB/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1675960477.2867
+    'REQUEST_TIME' => 1675960477
+]
+2023-02-09 17:34:38 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\webDB\frontend\views\site\comment.php in C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#1 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('comment', Array, Object(frontend\controllers\SiteController))
+#2 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(340): yii\base\Controller->render('comment', Array)
+#3 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(346): frontend\controllers\SiteController->actionComment(1)
+#4 [internal function]: frontend\controllers\SiteController->actionComment1()
+#5 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('comment1', Array)
+#8 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/comment1', Array)
+#9 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\webDB\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2023-02-09 17:34:38 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][info][application] $_GET = [
+    'r' => 'site/comment1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'rojfjp6qrls1kq9mfn5ad2u8bv'
+    '_csrf-frontend' => 'c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Thank you for registration. Please check your inbox for verification email.'
+    '__id' => '123456789012345678'
+    '__authKey' => 'ddcCEJsZAUQ5Op2ceA-o8UeO8PyP3V0N'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/webDB/frontend/web/index.php?r=site%2Fsite1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=rojfjp6qrls1kq9mfn5ad2u8bv; _csrf-frontend=c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT%22%3B%7D'
+    'PATH' => 'D:\\Environment\\apache-maven-3.6.1\\apache-maven-3.6.1\\bin;D:\\Environment\\jdk1.8.0_311\\bin;D:\\Environment\\jdk1.8.0_311\\jre\\bin;D:\\Environment\\hadoop-3.1.0\\bin;E:\\Program Files\\JetBrains\\CLion 2021.3.4\\bin\\mingw\\bin;C:\\TDM-GCC-64\\bin;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\usr\\bin;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Anaconda3;C:\\ProgramData\\Anaconda3\\Scripts;C:\\ProgramData\\Anaconda3\\Library\\bin;C:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramFiles\\opencv\\build\\x64\\vc15\\bin;C:\\Program Files (x86)\\mingw64\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;D:\\ffmpeg\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.1\\;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\lib\\x64;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\include;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\extras\\CUPTI\\lib64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Users\\yukhu\\.conda\\envs\\open-mmlab\\Scripts;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\ProgramData\\NVIDIA Corporation\\CUDA Samples\\v11.5;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\Hostx64\\x64;C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2021.3.3\\target-windows-x64;C:\\jython2.7.3\\bin;C:\\xampp\\php\\php.exe;C:\\xampp\\php;C:\\composer;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/webDB/frontend/web/index.php'
+    'REMOTE_PORT' => '54640'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcomment1'
+    'REQUEST_URI' => '/webDB/frontend/web/index.php?r=site%2Fcomment1'
+    'SCRIPT_NAME' => '/webDB/frontend/web/index.php'
+    'PHP_SELF' => '/webDB/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1675960478.1458
+    'REQUEST_TIME' => 1675960478
+]
+2023-02-09 17:35:34 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\webDB\frontend\views\site\comment.php in C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#1 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('comment', Array, Object(frontend\controllers\SiteController))
+#2 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(342): yii\base\Controller->render('comment', Array)
+#3 [internal function]: frontend\controllers\SiteController->actionComment1()
+#4 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('comment1', Array)
+#7 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/comment1', Array)
+#8 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\webDB\frontend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2023-02-09 17:35:34 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][info][application] $_GET = [
+    'r' => 'site/comment1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'rojfjp6qrls1kq9mfn5ad2u8bv'
+    '_csrf-frontend' => 'c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Thank you for registration. Please check your inbox for verification email.'
+    '__id' => '123456789012345678'
+    '__authKey' => 'ddcCEJsZAUQ5Op2ceA-o8UeO8PyP3V0N'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/webDB/frontend/web/index.php?r=site%2Fsite1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=rojfjp6qrls1kq9mfn5ad2u8bv; _csrf-frontend=c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT%22%3B%7D'
+    'PATH' => 'D:\\Environment\\apache-maven-3.6.1\\apache-maven-3.6.1\\bin;D:\\Environment\\jdk1.8.0_311\\bin;D:\\Environment\\jdk1.8.0_311\\jre\\bin;D:\\Environment\\hadoop-3.1.0\\bin;E:\\Program Files\\JetBrains\\CLion 2021.3.4\\bin\\mingw\\bin;C:\\TDM-GCC-64\\bin;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\usr\\bin;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Anaconda3;C:\\ProgramData\\Anaconda3\\Scripts;C:\\ProgramData\\Anaconda3\\Library\\bin;C:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramFiles\\opencv\\build\\x64\\vc15\\bin;C:\\Program Files (x86)\\mingw64\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;D:\\ffmpeg\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.1\\;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\lib\\x64;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\include;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\extras\\CUPTI\\lib64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Users\\yukhu\\.conda\\envs\\open-mmlab\\Scripts;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\ProgramData\\NVIDIA Corporation\\CUDA Samples\\v11.5;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\Hostx64\\x64;C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2021.3.3\\target-windows-x64;C:\\jython2.7.3\\bin;C:\\xampp\\php\\php.exe;C:\\xampp\\php;C:\\composer;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/webDB/frontend/web/index.php'
+    'REMOTE_PORT' => '54787'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcomment1'
+    'REQUEST_URI' => '/webDB/frontend/web/index.php?r=site%2Fcomment1'
+    'SCRIPT_NAME' => '/webDB/frontend/web/index.php'
+    'PHP_SELF' => '/webDB/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1675960534.7036
+    'REQUEST_TIME' => 1675960534
+]
+2023-02-09 17:36:27 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\User::name in C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('name')
+#1 C:\xampp\htdocs\webDB\frontend\views\site\comment1.php(47): yii\db\BaseActiveRecord->__get('name')
+#2 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#5 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('comment1', Array, Object(frontend\controllers\SiteController))
+#6 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(342): yii\base\Controller->render('comment1', Array)
+#7 [internal function]: frontend\controllers\SiteController->actionComment1()
+#8 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('comment1', Array)
+#11 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/comment1', Array)
+#12 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\webDB\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2023-02-09 17:36:27 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][info][application] $_GET = [
+    'r' => 'site/comment1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'rojfjp6qrls1kq9mfn5ad2u8bv'
+    '_csrf-frontend' => 'c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Thank you for registration. Please check your inbox for verification email.'
+    '__id' => '123456789012345678'
+    '__authKey' => 'ddcCEJsZAUQ5Op2ceA-o8UeO8PyP3V0N'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/webDB/frontend/web/index.php?r=site%2Fsite1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=rojfjp6qrls1kq9mfn5ad2u8bv; _csrf-frontend=c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT%22%3B%7D'
+    'PATH' => 'D:\\Environment\\apache-maven-3.6.1\\apache-maven-3.6.1\\bin;D:\\Environment\\jdk1.8.0_311\\bin;D:\\Environment\\jdk1.8.0_311\\jre\\bin;D:\\Environment\\hadoop-3.1.0\\bin;E:\\Program Files\\JetBrains\\CLion 2021.3.4\\bin\\mingw\\bin;C:\\TDM-GCC-64\\bin;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\usr\\bin;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Anaconda3;C:\\ProgramData\\Anaconda3\\Scripts;C:\\ProgramData\\Anaconda3\\Library\\bin;C:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramFiles\\opencv\\build\\x64\\vc15\\bin;C:\\Program Files (x86)\\mingw64\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;D:\\ffmpeg\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.1\\;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\lib\\x64;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\include;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\extras\\CUPTI\\lib64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Users\\yukhu\\.conda\\envs\\open-mmlab\\Scripts;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\ProgramData\\NVIDIA Corporation\\CUDA Samples\\v11.5;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\Hostx64\\x64;C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2021.3.3\\target-windows-x64;C:\\jython2.7.3\\bin;C:\\xampp\\php\\php.exe;C:\\xampp\\php;C:\\composer;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/webDB/frontend/web/index.php'
+    'REMOTE_PORT' => '54917'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcomment1'
+    'REQUEST_URI' => '/webDB/frontend/web/index.php?r=site%2Fcomment1'
+    'SCRIPT_NAME' => '/webDB/frontend/web/index.php'
+    'PHP_SELF' => '/webDB/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1675960587.7289
+    'REQUEST_TIME' => 1675960587
+]
+2023-02-09 17:37:38 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\User::name in C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('name')
+#1 C:\xampp\htdocs\webDB\frontend\views\site\comment1.php(47): yii\db\BaseActiveRecord->__get('name')
+#2 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#5 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('comment1', Array, Object(frontend\controllers\SiteController))
+#6 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(342): yii\base\Controller->render('comment1', Array)
+#7 [internal function]: frontend\controllers\SiteController->actionComment1()
+#8 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('comment1', Array)
+#11 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/comment1', Array)
+#12 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\webDB\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2023-02-09 17:37:38 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][info][application] $_GET = [
+    'r' => 'site/comment1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'rojfjp6qrls1kq9mfn5ad2u8bv'
+    '_csrf-frontend' => 'c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Thank you for registration. Please check your inbox for verification email.'
+    '__id' => '123456789012345678'
+    '__authKey' => 'ddcCEJsZAUQ5Op2ceA-o8UeO8PyP3V0N'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/webDB/frontend/web/index.php?r=site%2Fsite1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=rojfjp6qrls1kq9mfn5ad2u8bv; _csrf-frontend=c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT%22%3B%7D'
+    'PATH' => 'D:\\Environment\\apache-maven-3.6.1\\apache-maven-3.6.1\\bin;D:\\Environment\\jdk1.8.0_311\\bin;D:\\Environment\\jdk1.8.0_311\\jre\\bin;D:\\Environment\\hadoop-3.1.0\\bin;E:\\Program Files\\JetBrains\\CLion 2021.3.4\\bin\\mingw\\bin;C:\\TDM-GCC-64\\bin;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\usr\\bin;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Anaconda3;C:\\ProgramData\\Anaconda3\\Scripts;C:\\ProgramData\\Anaconda3\\Library\\bin;C:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramFiles\\opencv\\build\\x64\\vc15\\bin;C:\\Program Files (x86)\\mingw64\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;D:\\ffmpeg\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.1\\;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\lib\\x64;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\include;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\extras\\CUPTI\\lib64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Users\\yukhu\\.conda\\envs\\open-mmlab\\Scripts;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\ProgramData\\NVIDIA Corporation\\CUDA Samples\\v11.5;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\Hostx64\\x64;C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2021.3.3\\target-windows-x64;C:\\jython2.7.3\\bin;C:\\xampp\\php\\php.exe;C:\\xampp\\php;C:\\composer;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/webDB/frontend/web/index.php'
+    'REMOTE_PORT' => '55094'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcomment1'
+    'REQUEST_URI' => '/webDB/frontend/web/index.php?r=site%2Fcomment1'
+    'SCRIPT_NAME' => '/webDB/frontend/web/index.php'
+    'PHP_SELF' => '/webDB/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1675960658.6077
+    'REQUEST_TIME' => 1675960658
+]
+2023-02-09 17:40:26 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][error][Error] Error: Call to a member function isAttributeRequired() on array in C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\widgets\ActiveField.php:932
+Stack trace:
+#0 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\widgets\ActiveField.php(405): yii\widgets\ActiveField->addAriaAttributes(Array)
+#1 C:\xampp\htdocs\webDB\frontend\views\site\comment1.php(43): yii\widgets\ActiveField->textInput(Array)
+#2 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(347): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#5 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('comment1', Array, Object(frontend\controllers\SiteController))
+#6 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(342): yii\base\Controller->render('comment1', Array)
+#7 [internal function]: frontend\controllers\SiteController->actionComment1()
+#8 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('comment1', Array)
+#11 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/comment1', Array)
+#12 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\webDB\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2023-02-09 17:40:26 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][info][application] $_GET = [
+    'r' => 'site/comment1'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'ZBmOMoxgY__u2rOCs2uDAuXJFCjWeO1yyDdqCHzXq783Qd9ovRQxnZbu6erePOF6lIF-ULgJnkWsewdME4PF6w=='
+    'Comment' => [
+        'content' => '33333333'
+        'author' => 'hyx1'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'rojfjp6qrls1kq9mfn5ad2u8bv'
+    '_csrf-frontend' => 'c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Thank you for registration. Please check your inbox for verification email.'
+    '__id' => '123456789012345678'
+    '__authKey' => 'ddcCEJsZAUQ5Op2ceA-o8UeO8PyP3V0N'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '162'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ORIGIN' => 'http://localhost:8090'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/webDB/frontend/web/index.php?r=site%2Fcomment1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=rojfjp6qrls1kq9mfn5ad2u8bv; _csrf-frontend=c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT%22%3B%7D'
+    'PATH' => 'D:\\Environment\\apache-maven-3.6.1\\apache-maven-3.6.1\\bin;D:\\Environment\\jdk1.8.0_311\\bin;D:\\Environment\\jdk1.8.0_311\\jre\\bin;D:\\Environment\\hadoop-3.1.0\\bin;E:\\Program Files\\JetBrains\\CLion 2021.3.4\\bin\\mingw\\bin;C:\\TDM-GCC-64\\bin;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\usr\\bin;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Anaconda3;C:\\ProgramData\\Anaconda3\\Scripts;C:\\ProgramData\\Anaconda3\\Library\\bin;C:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramFiles\\opencv\\build\\x64\\vc15\\bin;C:\\Program Files (x86)\\mingw64\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;D:\\ffmpeg\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.1\\;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\lib\\x64;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\include;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\extras\\CUPTI\\lib64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Users\\yukhu\\.conda\\envs\\open-mmlab\\Scripts;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\ProgramData\\NVIDIA Corporation\\CUDA Samples\\v11.5;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\Hostx64\\x64;C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2021.3.3\\target-windows-x64;C:\\jython2.7.3\\bin;C:\\xampp\\php\\php.exe;C:\\xampp\\php;C:\\composer;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/webDB/frontend/web/index.php'
+    'REMOTE_PORT' => '55690'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fcomment1'
+    'REQUEST_URI' => '/webDB/frontend/web/index.php?r=site%2Fcomment1'
+    'SCRIPT_NAME' => '/webDB/frontend/web/index.php'
+    'PHP_SELF' => '/webDB/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1675960826.2357
+    'REQUEST_TIME' => 1675960826
+]
+2023-02-09 17:41:02 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'New_id' cannot be null in C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute('INSERT INTO `Co...')
+#2 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\Schema.php(431): yii\db\Command->execute()
+#3 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\ActiveRecord.php(604): yii\db\Schema->insert('{{%Comment}}', Array)
+#4 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\ActiveRecord.php(570): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\BaseActiveRecord.php(676): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\xampp\htdocs\webDB\frontend\models\CommentForm.php(37): yii\db\BaseActiveRecord->save()
+#7 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(333): frontend\models\CommentForm->submit()
+#8 [internal function]: frontend\controllers\SiteController->actionComment1()
+#9 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('comment1', Array)
+#12 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/comment1', Array)
+#13 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\webDB\frontend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'New_id' cannot be null
+The SQL being executed was: INSERT INTO `Comment` (`id`, `New_id`, `content`, `author`) VALUES ('4', NULL, '123', 'hyx1') in C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\Schema.php:676
+Stack trace:
+#0 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `Co...')
+#1 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute('INSERT INTO `Co...')
+#2 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\Schema.php(431): yii\db\Command->execute()
+#3 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\ActiveRecord.php(604): yii\db\Schema->insert('{{%Comment}}', Array)
+#4 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\ActiveRecord.php(570): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\BaseActiveRecord.php(676): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\xampp\htdocs\webDB\frontend\models\CommentForm.php(37): yii\db\BaseActiveRecord->save()
+#7 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(333): frontend\models\CommentForm->submit()
+#8 [internal function]: frontend\controllers\SiteController->actionComment1()
+#9 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('comment1', Array)
+#12 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/comment1', Array)
+#13 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\webDB\frontend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'New_id' cannot be null
+)
+
+2023-02-09 17:41:02 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][info][application] $_GET = [
+    'r' => 'site/comment1'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'uDm-3z7kdgLoTxJ-Xgz-cvH5HyDi657f2f2XgjpX5rvrYe-FD5AkYJB7SBYzW5wKgLF1WIya7ei9sfrGVQOI7w=='
+    'CommentForm' => [
+        'content' => '123'
+        'author' => 'hyx1'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'rojfjp6qrls1kq9mfn5ad2u8bv'
+    '_csrf-frontend' => 'c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Thank you for registration. Please check your inbox for verification email.'
+    '__id' => '123456789012345678'
+    '__authKey' => 'ddcCEJsZAUQ5Op2ceA-o8UeO8PyP3V0N'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '165'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:8090'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/webDB/frontend/web/index.php?r=site%2Fcomment1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=rojfjp6qrls1kq9mfn5ad2u8bv; _csrf-frontend=c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT%22%3B%7D'
+    'PATH' => 'D:\\Environment\\apache-maven-3.6.1\\apache-maven-3.6.1\\bin;D:\\Environment\\jdk1.8.0_311\\bin;D:\\Environment\\jdk1.8.0_311\\jre\\bin;D:\\Environment\\hadoop-3.1.0\\bin;E:\\Program Files\\JetBrains\\CLion 2021.3.4\\bin\\mingw\\bin;C:\\TDM-GCC-64\\bin;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\usr\\bin;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Anaconda3;C:\\ProgramData\\Anaconda3\\Scripts;C:\\ProgramData\\Anaconda3\\Library\\bin;C:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramFiles\\opencv\\build\\x64\\vc15\\bin;C:\\Program Files (x86)\\mingw64\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;D:\\ffmpeg\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.1\\;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\lib\\x64;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\include;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\extras\\CUPTI\\lib64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Users\\yukhu\\.conda\\envs\\open-mmlab\\Scripts;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\ProgramData\\NVIDIA Corporation\\CUDA Samples\\v11.5;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\Hostx64\\x64;C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2021.3.3\\target-windows-x64;C:\\jython2.7.3\\bin;C:\\xampp\\php\\php.exe;C:\\xampp\\php;C:\\composer;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/webDB/frontend/web/index.php'
+    'REMOTE_PORT' => '55773'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fcomment1'
+    'REQUEST_URI' => '/webDB/frontend/web/index.php?r=site%2Fcomment1'
+    'SCRIPT_NAME' => '/webDB/frontend/web/index.php'
+    'PHP_SELF' => '/webDB/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1675960862.7272
+    'REQUEST_TIME' => 1675960862
+]
+2023-02-09 17:42:12 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'New_id' cannot be null in C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute('INSERT INTO `Co...')
+#2 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\Schema.php(431): yii\db\Command->execute()
+#3 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\ActiveRecord.php(604): yii\db\Schema->insert('{{%Comment}}', Array)
+#4 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\ActiveRecord.php(570): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\BaseActiveRecord.php(676): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\xampp\htdocs\webDB\frontend\models\CommentForm.php(37): yii\db\BaseActiveRecord->save()
+#7 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(333): frontend\models\CommentForm->submit()
+#8 [internal function]: frontend\controllers\SiteController->actionComment1()
+#9 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('comment1', Array)
+#12 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/comment1', Array)
+#13 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\webDB\frontend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'New_id' cannot be null
+The SQL being executed was: INSERT INTO `Comment` (`id`, `New_id`, `content`, `author`) VALUES ('4', NULL, '123', 'hyx1') in C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\Schema.php:676
+Stack trace:
+#0 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `Co...')
+#1 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute('INSERT INTO `Co...')
+#2 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\Schema.php(431): yii\db\Command->execute()
+#3 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\ActiveRecord.php(604): yii\db\Schema->insert('{{%Comment}}', Array)
+#4 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\ActiveRecord.php(570): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\db\BaseActiveRecord.php(676): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\xampp\htdocs\webDB\frontend\models\CommentForm.php(37): yii\db\BaseActiveRecord->save()
+#7 C:\xampp\htdocs\webDB\frontend\controllers\SiteController.php(333): frontend\models\CommentForm->submit()
+#8 [internal function]: frontend\controllers\SiteController->actionComment1()
+#9 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('comment1', Array)
+#12 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/comment1', Array)
+#13 C:\xampp\htdocs\webDB\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\webDB\frontend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'New_id' cannot be null
+)
+
+2023-02-09 17:42:12 [::1][123456789012345678][rojfjp6qrls1kq9mfn5ad2u8bv][info][application] $_GET = [
+    'r' => 'site/comment1'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'uDm-3z7kdgLoTxJ-Xgz-cvH5HyDi657f2f2XgjpX5rvrYe-FD5AkYJB7SBYzW5wKgLF1WIya7ei9sfrGVQOI7w=='
+    'CommentForm' => [
+        'content' => '123'
+        'author' => 'hyx1'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'rojfjp6qrls1kq9mfn5ad2u8bv'
+    '_csrf-frontend' => 'c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Thank you for registration. Please check your inbox for verification email.'
+    '__id' => '123456789012345678'
+    '__authKey' => 'ddcCEJsZAUQ5Op2ceA-o8UeO8PyP3V0N'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '165'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ORIGIN' => 'http://localhost:8090'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/webDB/frontend/web/index.php?r=site%2Fcomment1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=rojfjp6qrls1kq9mfn5ad2u8bv; _csrf-frontend=c14261892908329387ca26d9ff0e69d099bf2c53a37d96e87e492dbd587a4bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22SXQZ1tRbx4ZhmWbxqHjxnqs7dLmDoTnT%22%3B%7D'
+    'PATH' => 'D:\\Environment\\apache-maven-3.6.1\\apache-maven-3.6.1\\bin;D:\\Environment\\jdk1.8.0_311\\bin;D:\\Environment\\jdk1.8.0_311\\jre\\bin;D:\\Environment\\hadoop-3.1.0\\bin;E:\\Program Files\\JetBrains\\CLion 2021.3.4\\bin\\mingw\\bin;C:\\TDM-GCC-64\\bin;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\usr\\bin;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Anaconda3;C:\\ProgramData\\Anaconda3\\Scripts;C:\\ProgramData\\Anaconda3\\Library\\bin;C:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramFiles\\opencv\\build\\x64\\vc15\\bin;C:\\Program Files (x86)\\mingw64\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;D:\\ffmpeg\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.1\\;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\lib\\x64;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\include;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\extras\\CUPTI\\lib64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Users\\yukhu\\.conda\\envs\\open-mmlab\\Scripts;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\ProgramData\\NVIDIA Corporation\\CUDA Samples\\v11.5;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\Hostx64\\x64;C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2021.3.3\\target-windows-x64;C:\\jython2.7.3\\bin;C:\\xampp\\php\\php.exe;C:\\xampp\\php;C:\\composer;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/webDB/frontend/web/index.php'
+    'REMOTE_PORT' => '55955'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fcomment1'
+    'REQUEST_URI' => '/webDB/frontend/web/index.php?r=site%2Fcomment1'
+    'SCRIPT_NAME' => '/webDB/frontend/web/index.php'
+    'PHP_SELF' => '/webDB/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1675960932.6802
+    'REQUEST_TIME' => 1675960932
+]

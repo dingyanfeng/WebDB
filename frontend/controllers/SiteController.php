@@ -23,6 +23,7 @@ use frontend\models\ModifyForm;
 use common\models\News;
 
 use common\models\Comment;
+use frontend\models\CommentForm;
 /**
  * Site controller
  */
@@ -316,9 +317,30 @@ class SiteController extends Controller
     }
 
 
+
+  
+
     public function actionComment1()
     {
-        return $this->render('comment1');
+        if (Yii::$app->user->isGuest)
+            return $this->goHome();
+        // find certain news
+        $news = news::findAll(['id' => 1]);
+        $comment = Comment::findAll(['New_id' => 1]);
+        $model = new CommentForm();
+        if ($model->load(Yii::$app->request->post()))
+        {
+            if ($model->submit())
+            {
+                return $this->redirect(array('/site/comment1', 'message' => '发布成功！', 'id' => 1));
+            }
+        }
+
+        return $this->render('comment1', [
+            'news' => $news,
+            'comment' => $comment,
+            'model' => $model,
+        ]);
     }
 
     public function actionComment2()
@@ -340,6 +362,8 @@ class SiteController extends Controller
     {
         return $this->render('comment5');
     }
+
+    
 
 
 
