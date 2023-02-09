@@ -21,6 +21,8 @@ use frontend\models\SignupForm;
 use frontend\models\ModifyForm;
 
 use common\models\News;
+
+use common\models\Comment;
 /**
  * Site controller
  */
@@ -311,6 +313,32 @@ class SiteController extends Controller
     public function actionSite5()
     {
         return $this->render('site5');
+    }
+
+
+    public function actionComment1()
+    {
+        return $this->render('comment1');
+    }
+
+    public function actionComment2()
+    {
+        return $this->render('comment2');
+    }
+
+    public function actionComment3()
+    {
+        return $this->render('comment3');
+    }
+
+    public function actionComment4()
+    {
+        return $this->render('comment4');
+    }
+
+    public function actionComment5()
+    {
+        return $this->render('comment5');
     }
 
 

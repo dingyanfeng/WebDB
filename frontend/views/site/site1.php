@@ -1,6 +1,7 @@
 <?php
 
-use common\models\news;
+
+
 
 /*
  * Team：EW_WAR
@@ -8,10 +9,16 @@ use common\models\news;
  * 新闻1界面
 */
 
-$site1 = news::findAll(['id' => 1]);
+use yii\helpers\Html;
+use yii\helpers\Url;
+use yii\widgets\ActiveForm;
+use yii\widgets\LinkPager;
+
+$site1 = \common\models\news::findAll(['id' => 1]);
 if (sizeof($site1) != 0)
     $site1 = $site1[0];
 else $site1 = null;
+
 ?>
 
 <html>
@@ -93,5 +100,13 @@ else $site1 = null;
         </div>
       </div>
     </div>
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <center><button type="button"><a href="index.php?r=site%2Fcomment1" style="text-decoration: none;">评论列表</button></center>
+    <br><br>
+
   </body>
 </html>
+
+
+
