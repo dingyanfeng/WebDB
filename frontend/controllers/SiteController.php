@@ -345,22 +345,94 @@ class SiteController extends Controller
 
     public function actionComment2()
     {
-        return $this->render('comment2');
+        if (Yii::$app->user->isGuest)
+            return $this->goHome();
+        // find certain news
+        $news = news::findAll(['id' => 2]);
+        $comment = Comment::findAll(['New_id' => 2]);
+        $model = new CommentForm();
+        if ($model->load(Yii::$app->request->post()))
+        {
+            if ($model->submit())
+            {
+                return $this->redirect(array('/site/comment2', 'message' => '发布成功！', 'id' => 2));
+            }
+        }
+
+        return $this->render('comment2', [
+            'news' => $news,
+            'comment' => $comment,
+            'model' => $model,
+        ]);
     }
 
     public function actionComment3()
     {
-        return $this->render('comment3');
+        if (Yii::$app->user->isGuest)
+            return $this->goHome();
+        // find certain news
+        $news = news::findAll(['id' => 3]);
+        $comment = Comment::findAll(['New_id' => 3]);
+        $model = new CommentForm();
+        if ($model->load(Yii::$app->request->post()))
+        {
+            if ($model->submit())
+            {
+                return $this->redirect(array('/site/comment3', 'message' => '发布成功！', 'id' => 3));
+            }
+        }
+
+        return $this->render('comment3', [
+            'news' => $news,
+            'comment' => $comment,
+            'model' => $model,
+        ]);
     }
 
     public function actionComment4()
     {
-        return $this->render('comment4');
+        if (Yii::$app->user->isGuest)
+            return $this->goHome();
+        // find certain news
+        $news = news::findAll(['id' => 4]);
+        $comment = Comment::findAll(['New_id' => 4]);
+        $model = new CommentForm();
+        if ($model->load(Yii::$app->request->post()))
+        {
+            if ($model->submit())
+            {
+                return $this->redirect(array('/site/comment4', 'message' => '发布成功！', 'id' => 4));
+            }
+        }
+
+        return $this->render('comment4', [
+            'news' => $news,
+            'comment' => $comment,
+            'model' => $model,
+        ]);
     }
 
     public function actionComment5()
     {
-        return $this->render('comment5');
+        if (Yii::$app->user->isGuest)
+            return $this->goHome();
+        // find certain news
+        $news = news::findAll(['id' => 5]);
+        $comment = Comment::findAll(['New_id' => 5]);
+        $model = new CommentForm();
+        if ($model->load(Yii::$app->request->post()))
+        {
+            if ($model->submit())
+            {
+                return $this->redirect(array('/site/comment5', 'message' => '发布成功！', 'id' => 5));
+            }
+        }
+
+        return $this->render('comment5', [
+            'news' => $news,
+            'comment' => $comment,
+            'model' => $model,
+        ]);
     }
 
     

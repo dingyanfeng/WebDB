@@ -6,7 +6,7 @@
 /*
  * Team：EW_WAR
  * Coding By：黄逸轩
- * 评论1界面
+ * 评论2界面
 */
 
 
@@ -17,14 +17,14 @@ use yii\widgets\ActiveForm;
 use yii\widgets\LinkPager;
 use frontend\controllers\SiteController;
 
-$comment1 = \common\models\Comment::findAll(['New_id' => 1]);
-if (sizeof($comment1) != 0)
-	$comment1 = $comment1;
-else $comment1 = null;
+$comment5 = \common\models\Comment::findAll(['New_id' => 5]);
+if (sizeof($comment5) != 0)
+	$comment5 = $comment5;
+else $comment2 = null;
 
 ?>
-<?php if ($comment1 != null)
-	foreach ($comment1 as $_comment) : ?>
+<?php if ($comment5 != null)
+    foreach ($comment5 as $_comment) : ?>
 	<div class="comments-list-wrap">
 		<div class="comment-list">
 			<div class="single-comment-body">
@@ -50,7 +50,7 @@ else $comment1 = null;
 </div>
 <div class="form-group" style="display: none">
 	<?= $form->field($model, 'New_id')->textInput([
-		'value' => 1
+		'value' => 5
 	]) ?>
 </div>
 <div class="form-group">

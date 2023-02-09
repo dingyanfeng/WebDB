@@ -90,5 +90,9 @@ else $site2 = null;
         </div>
       </div>
     </div>
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <center><button type="button"><a href="index.php?r=site%2Fcomment2" style="text-decoration: none;">评论列表</button></center>
+    <br><br>
   </body>
 </html>
