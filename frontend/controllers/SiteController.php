@@ -18,7 +18,9 @@ use frontend\models\ContactForm;
 
 use common\models\LoginForm;
 use frontend\models\SignupForm;
+use frontend\models\ModifyForm;
 
+use common\models\News;
 /**
  * Site controller
  */
@@ -170,6 +172,40 @@ class SiteController extends Controller
         ]);
     }
 
+
+
+
+
+    /**
+     *  重置信息的动作，用于修改当前的密码或者用户名
+     */
+    public function actionModify()
+    {
+        if (Yii::$app->user->isGuest) {
+            return $this->goHome();
+        }
+        $model = new ModifyForm();
+        if ($model->load(Yii::$app->request->post())) {
+            if ($model->setMyUser()) {
+                $model->setInfo();
+                Yii::$app->user->logout();
+                return $this->redirect(array('/site/index',
+                    'message' => "信息修改成功，请重新登录。"
+                ));
+            } else {
+                return $this->render('modify', [
+                    'model' => $model,
+                    'message' => "用户名或密码错误"
+                ]);
+            }
+        }
+        return $this->render('modify', [
+            'model' => $model,
+        ]);
+    }
+
+    
+
     /**
      * Requests password reset.
      *
@@ -241,6 +277,43 @@ class SiteController extends Controller
         Yii::$app->session->setFlash('error', 'Sorry, we are unable to verify your account with provided token.');
         return $this->goHome();
     }
+
+    /**
+     * Displays news page.
+     *
+     * @return mixed
+     */
+    public function actionNews()
+    {
+        return $this->render('news');
+    }
+
+    public function actionSite1()
+    {
+        return $this->render('site1');
+    }
+
+    public function actionSite2()
+    {
+        return $this->render('site2');
+    }
+
+    public function actionSite3()
+    {
+        return $this->render('site3');
+    }
+
+    public function actionSite4()
+    {
+        return $this->render('site4');
+    }
+
+    public function actionSite5()
+    {
+        return $this->render('site5');
+    }
+
+
 
     /**
      * Resend verification email
