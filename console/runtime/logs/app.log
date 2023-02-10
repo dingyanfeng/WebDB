@@ -1,0 +1,83 @@
+2023-02-08 09:23:30 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "migration". in D:\yii3\webDB\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\yii3\webDB\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#1 D:\yii3\webDB\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#2 D:\yii3\webDB\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#3 D:\yii3\webDB\yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "migration". in D:\yii3\webDB\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 D:\yii3\webDB\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#1 D:\yii3\webDB\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#2 D:\yii3\webDB\yii(23): yii\base\Application->run()
+#3 {main}
+2023-02-08 09:23:30 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\aLpkxoutlook.com\\AppData\\Roaming'
+    'AutInstLog' => 'C:\\ProgramData\\Siemens\\Automation\\Logfiles\\Setup\\'
+    'CLASSPATH' => '.;C:\\Program Files\\Java\\jdk1.8.0_191\\lib\\dt.jar;C:\\Program Files\\Java\\jdk1.8.0_191\\lib\\tools.tar'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-A0NJI9S8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'CURL_HOME' => 'D:\\一些办公应用程序\\curl-7.80.0-win64-mingw\\bin'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\aLpkxoutlook.com'
+    'include' => 'D:\\大三下课程\\软件安全（漏测）\\pin-3.22-98547-g7a303a835-msvc-windows\\source\\include'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_191'
+    'LOCALAPPDATA' => 'C:\\Users\\aLpkxoutlook.com\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-A0NJI9S8'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 8.0.25\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\aLpkxoutlook.com\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\VMWARE15\\bin\\;C:\\Program Files\\Common Files\\Siemens\\Automation\\Simatic OAM\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;am Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;D:\\downloadMATLAB\\bin\\win32;D:\\CS1.6\\runtime\\win64;D:\\CS1.6\\bin;D:\\CS1.6\\polyspace\\bin;D:\\大二下课程\\操作系统\\Git\\cmd;D:\\一些办公应用程序\\bin;C:\\Program Files\\Java\\jdk1.8.0_191\\bin;D:\\一些办公应用程序2\\Graphviz\\bin;D:\\phpstudy\\phpstudy_pro\\Extensions\\php\\php8.0.2nts;C:\\ProgramData\\ComposerSetup\\bin;D:\\百度网盘\\ffmpeg-20200716-d11cc74-win64-static\\bin;C:\\Users\\aLpkxoutlook.com\\AppData\\Roaming\\npm;D:\\SpecialForAnac;D:\\SpecialForAnac\\Scripts;D:\\SpecialForAnac\\Library\\mingw-w64\\bin;D:\\SpecialForAnac\\Library\\bin;%PyCharm Community Edition%;D:\\SpecialForPycharm\\PyCharm Community Edition 2021.3.1\\bin;%USERPROFILE%\\.dotnet\\tools;C:\\Users\\aLpkxoutlook.com\\AppData\\Local\\Pandoc\\;D:\\一些办公应用程序2\\Graphviz\\bin;C:\\Users\\aLpkxoutlook.com\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Tencent\\QQGameTempest\\Hall.57734\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 23 Model 17 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '23'
+    'PROCESSOR_REVISION' => '1100'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\aLpkxoutlook.com\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'Simatic_OAM' => 'C:\\Program Files\\Common Files\\Siemens\\Automation\\Simatic OAM'
+    'Simatic_OAM_DATA' => 'C:\\ProgramData\\Siemens\\Automation\\Simatic OAM'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ALPKXO~1.COM\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ALPKXO~1.COM\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-A0NJI9S8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-A0NJI9S8'
+    'USERNAME' => 'aLpkxoutlook.com'
+    'USERPROFILE' => 'C:\\Users\\aLpkxoutlook.com'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\X8\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1675819410.8616
+    'REQUEST_TIME' => 1675819410
+    'argv' => [
+        0 => 'yii'
+        1 => 'migration'
+    ]
+    'argc' => 2
+]

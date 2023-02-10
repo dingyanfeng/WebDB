@@ -81,6 +81,8 @@ AppAsset_b::register($this);
                                     ['label' => '主页', 'url' => ['/site/index']],
                                     ['label' => '新闻', 'url' => ['/site/news']],
                                     ['label' => '关于', 'url' => ['/site/about']],
+                                    //这里做文章，最后改为想打开的php文件名,然后controller里增添对应action某某
+                                    ['label' => '援助', 'url' => ['/usupport/index']],
                                 ];
 
                                 if (Yii::$app->user->isGuest) {

@@ -14,6 +14,10 @@ $Refugee_hungary = \common\models\Refugee::findOne(['destination' => '匈牙利'
 $Refugee_slovakia = \common\models\Refugee::findOne(['destination' => '斯洛伐克']);
 $Refugee_moldova = \common\models\Refugee::findOne(['destination' => '摩尔多瓦']);
 $Refugee_belarus = \common\models\Refugee::findOne(['destination' => '白俄罗斯']);
+
+
+
+
 // $this->title = 'My Yii Application';
 ?>
 <!-- BEGIN: .cover -->
@@ -254,16 +258,16 @@ $Refugee_belarus = \common\models\Refugee::findOne(['destination' => '白俄罗�
 <section class="section" id="blog">
     <div class="container">
         <h6 class="section-title mb-0 text-center">Latest Articles</h6>
-        <h6 class="section-subtitle mb-5 text-center">Architecto provident deserunt eveniet libero</h6>
+        <h6 class="section-subtitle mb-5 text-center">注：本网站为南开大学学生作业，网站提供数据仅为练习，不负任何法律责任，请勿当真。</h6>
 
         <div class="row">
             <div class="col-md-4">
                 <div class="card border-0 mb-4">
                     <img src="assets/frontend/leadmark/public_html/assets/imgs/blog-1.jpg" alt="" class="card-img-top w-100">
                     <div class="card-body">                         
-                        <h6 class="card-title">Pariatur Omnis Harum quae sint.</h6>
-                        <p>Fuga quae ratione inventore Perferendis porro.</p>
-                        <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
+                        <h6 class="card-title">俄乌历次冲突汇总</h6>
+                        <p>整理了俄乌双方各次冲突的时间、地点、投入兵力、伤亡情况等</p>
+                        <a href="index.php?r=collision%2Findex" class="small text-muted">跳转到数据界面</a>
                     </div>
                 </div>
             </div>
@@ -271,9 +275,9 @@ $Refugee_belarus = \common\models\Refugee::findOne(['destination' => '白俄罗�
                 <div class="card border-0 mb-4">
                     <img src="assets/frontend/leadmark/public_html/assets/imgs/blog-2.jpg" alt="" class="card-img-top w-100">
                     <div class="card-body">                         
-                        <h6 class="card-title"> Harum Quae Porro</h5>
-                        <p>Fuga quae ratione inventore Perferendis porro.</p>
-                        <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
+                        <h6 class="card-title">俄罗斯战损</h5>
+                        <p>统计俄罗斯在战争中武器消耗情况</p>
+                        <a href="index.php?r=rwardamage%2Findex" class="small text-muted">跳转到数据界面</a>
                     </div>
                 </div>
             </div>
@@ -281,9 +285,9 @@ $Refugee_belarus = \common\models\Refugee::findOne(['destination' => '白俄罗�
                 <div class="card border-0 mb-4">
                     <img src="assets/frontend/leadmark/public_html/assets/imgs/blog-3.jpg" alt="" class="card-img-top w-100">
                     <div class="card-body">                         
-                        <h6 class="card-title">Qui optio neque alias</h6>
-                        <p>Fuga quae ratione inventore Perferendis porro.</p>
-                        <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
+                        <h6 class="card-title">乌克兰战损</h6>
+                        <p>统计乌克兰在战争中武器消耗情况</p>
+                        <a href="index.php?r=uwardamage%2Findex" class="small text-muted">跳转到数据界面</a>
                     </div>
                 </div>
             </div>

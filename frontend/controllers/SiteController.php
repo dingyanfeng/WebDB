@@ -290,6 +290,7 @@ class SiteController extends Controller
     {
         return $this->render('news');
     }
+    
 
     public function actionSite1()
     {
