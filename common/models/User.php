@@ -18,6 +18,7 @@ use yii\web\IdentityInterface;
  * @property string $auth_key      认证信息
  * @property string $tel           联系方式
  * @property string $nationality   国籍
+ * @property int $type          权限类别
  */
 class User extends ActiveRecord implements IdentityInterface
 {
@@ -151,10 +152,11 @@ class User extends ActiveRecord implements IdentityInterface
         $this->tel = $tel;
     }
 
-    // public function setType($type)
-    // {
-    //     $this->type = $type;
-    // }
+
+    public function setType($type)
+    {
+        $this->type = $type;
+    }
 
     // public function visitors(){
     //     $query = User::find()->where(['type' => 3])->all();

@@ -36,10 +36,15 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
+        ['label' => 'userInfo', 'url' => ['/site/userinfo']],
+        ['label' => 'manageComments', 'url' => ['/site/managecomments']]
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-    }     
+    }
+    // else{
+    //     $menuItems[] = ['label' => 'userInfo', 'url' => ['/site/userinfo']];
+    // }     
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav me-auto mb-2 mb-md-0'],
         'items' => $menuItems,
@@ -54,6 +59,7 @@ AppAsset::register($this);
             )
             . Html::endForm();
     }
+
     NavBar::end();
     ?>
 </header>

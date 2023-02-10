@@ -39,7 +39,8 @@ else $comment1 = null;
 <?php endforeach; ?>
 
 
-<center><?php $form = ActiveForm::begin(); ?>
+<center>
+<?php $form = ActiveForm::begin(); ?>
 <div class="form-group">
 	<h2><?= $form->field($model, 'content')->textInput(['autofocus' => true]) ?></h2>
 </div>
@@ -56,4 +57,5 @@ else $comment1 = null;
 <div class="form-group">
 	<?= Html::submitButton('提交', ['class' => 'btn btn-primary']) ?>
 </div>
-<?php ActiveForm::end(); ?></center>
+<?php ActiveForm::end(); ?>
+</center>

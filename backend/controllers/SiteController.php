@@ -8,6 +8,8 @@ use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
+use common\models\Comment;
+use backend\models\DeleteCommentForm;
 
 /**
  * Site controller
@@ -24,7 +26,7 @@ class SiteController extends Controller
                 'class' => AccessControl::class,
                 'rules' => [
                     [
-                        'actions' => ['login', 'error'],
+                        'actions' => ['login', 'error','userinfo','managecomments'],
                         'allow' => true,
                     ],
                     [
@@ -101,4 +103,59 @@ class SiteController extends Controller
 
         return $this->goHome();
     }
+
+    public function actionUserinfo()
+    {
+
+        return $this->render('userinfo');
+    }
+
+    public function actionManagecomments()
+    {
+        $model = new DeleteCommentForm();
+        
+        if ($model->load(Yii::$app->request->post()))
+        {
+            $id = $model->id;
+            $comment = Comment::findOne(['id' => $id]);
+            $comment->delete();
+            if ($model->submit())
+            {
+                return $this->redirect(array('/site/managecomments', 'message' => '发布成功！', 'id' => 4));
+            }
+        }
+        return $this->render('managecomments',[
+            'model' => $model,
+        ]
+        );
+    }
+
+    // public function actionDeletecomments()
+    // {
+        // if (Yii::$app->user->isGuest)
+            // return $this->goHome();
+        // find certain news
+        // $news = news::findAll(['id' => 4]);
+        
+        // $model = new DeleteCommentForm();
+        
+        // if ($model->load(Yii::$app->request->post()))
+        // {
+        //     if ($model->submit())
+        //     {
+        //         $delete_id = $model->delete_id;
+        //         $comment = Comment::findOne(['id' => $delete_id]);
+        //         $comment->delete()();
+        //         return $this->redirect(array('/site/managecomments', 'message' => '发布成功！', 'id' => 4));
+        //     }
+        // }
+
+        // return $this->render('comment4', [
+        //     'news' => $news,
+        //     'comment' => $comment,
+        //     'model' => $model,
+        // ]);
+    // }
+
+    
 }
