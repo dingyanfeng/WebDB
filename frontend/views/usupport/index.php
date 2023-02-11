@@ -17,7 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <h1><?= Html::encode($this->title) ?></h1>
     <p>
-        <font size="8">本页面展示了世界各国各国对乌克兰的援助,包括不同数量的武器，金钱（美元）等。</font>
+        <font size="6">本页面展示了世界各国各国对乌克兰的援助,包括不同数量的武器，金钱（美元）等。</font>
     </p>
     <p>
         <?= Html::a('Create Usupport', ['create'], ['class' => 'btn btn-success']) ?>
