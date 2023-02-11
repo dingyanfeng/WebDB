@@ -52,24 +52,24 @@ AppAsset_b::register($this);
                         </a>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">                     
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a class="nav-link" href="#service">Our Service</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#about">About Us</a>
-                                </li>
+                                </li> -->
                                 <li class="nav-item">
                                     <a class="nav-link" href="#portfolio">难民去向</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#blog">Blog</a>
+                                    <a class="nav-link" href="#blog">最新文章</a>
                                 </li>
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a class="nav-link" href="#contact">Contact</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="components.html" class="ml-4 nav-link btn btn-primary btn-sm rounded">Components</a>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                         <!-- 导航栏 BEGIN: #main-nav  TODO 导航栏调转-->
@@ -89,13 +89,8 @@ AppAsset_b::register($this);
                                     $menuItems[] = ['label' => '注册', 'url' => ['/site/signup']];
                                     $menuItems[] = ['label' => '登录', 'url' => ['/site/login']];
                                 } else {
-                                    $menuItems[] = ['label' => '健康日报', 'url' => ['/site/healthreport']];
                                     $menuItems[] = ['label' => '修改信息', 'url' => ['/site/modify']];
 
-
-                                    if (Yii::$app->user->identity->type == '1') {
-                                        $menuItems[] = ['label' => '后台管理', 'url' => ['/backend/site/index']];
-                                    }
 
                                     $menuItems[] = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li><span>"
                                         . Html::beginForm(['/site/logout'], 'post')

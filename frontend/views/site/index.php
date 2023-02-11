@@ -257,7 +257,7 @@ $Refugee_belarus = \common\models\Refugee::findOne(['destination' => '白俄罗�
 <!-- Blog Section -->
 <section class="section" id="blog">
     <div class="container">
-        <h6 class="section-title mb-0 text-center">Latest Articles</h6>
+        <h6 class="section-title mb-0 text-center">最新文章</h6>
         <h6 class="section-subtitle mb-5 text-center">注：本网站为南开大学学生作业，网站提供数据仅为练习，不负任何法律责任，请勿当真。</h6>
 
         <div class="row">
