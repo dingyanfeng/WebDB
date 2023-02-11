@@ -106,12 +106,19 @@ class SiteController extends Controller
 
     public function actionUserinfo()
     {
-
+        if (Yii::$app->user->identity->type==0)
+        {
+            return $this->goHome();
+        }
         return $this->render('userinfo');
     }
 
     public function actionManagecomments()
     {
+        if (Yii::$app->user->identity->type==0)
+        {
+            return $this->goHome();
+        }
         $model = new DeleteCommentForm();
         
         if ($model->load(Yii::$app->request->post()))

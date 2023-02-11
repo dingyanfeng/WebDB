@@ -35,28 +35,29 @@ $this->title = '管理员页面';
         <p class="lead">The administrator can manage comments, users and other information on this page.</p>
 
     </div>
+    
+        <div class="body-content">
 
-    <div class="body-content">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>用户信息页面</h2>
 
-        <div class="row">
-            <div class="col-lg-6">
-                <h2>用户信息页面</h2>
+                    <p>通过该部分，管理员可以获取用户的基本信息，当然，我们假设管理员具有相同的权限，所有这里的用户限制为非管理员用户.</p>
 
-                <p>通过该部分，管理员可以获取用户的基本信息，当然，我们假设管理员具有相同的权限，所有这里的用户限制为非管理员用户.</p>
+                    <p><a class="btn btn-outline-secondary" href="index.php?r=site%2Fuserinfo">用户信息获取 &raquo;</a></p>
+                </div>
+                <div class="col-lg-6">
+                    <h2>评论详情及删除</h2>
 
-                <p><a class="btn btn-outline-secondary" href="index.php?r=site%2Fuserinfo">用户信息获取 &raquo;</a></p>
-            </div>
-            <div class="col-lg-6">
-                <h2>评论详情及删除</h2>
+                    <p>通过该部分，管理员可以查看所有新闻对应的评论，该部分通过显示新闻ID和评论ID实现，同时，为了维护评论区的和谐，管理员具有删除评论的权利，通过输入对应的评论ID即可实现删除功能.</p>
 
-                <p>通过该部分，管理员可以查看所有新闻对应的评论，该部分通过显示新闻ID和评论ID实现，同时，为了维护评论区的和谐，管理员具有删除评论的权利，通过输入对应的评论ID即可实现删除功能.</p>
+                    <p><a class="btn btn-outline-secondary" href="index.php?r=site%2Fmanagecomments">评论管理 &raquo;</a></p>
+                </div>
 
-                <p><a class="btn btn-outline-secondary" href="index.php?r=site%2Fmanagecomments">评论管理 &raquo;</a></p>
             </div>
 
         </div>
-
-    </div>
+    
 </div>
 <!-- Back to Top -->
 <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
