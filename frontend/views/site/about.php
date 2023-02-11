@@ -37,7 +37,7 @@ $teamers = \common\models\TeamMember::findAll(['captain' => 0]);
                 <div class="card">
                     <div class="card-body">
                         <div class="media align-items-center mb-3">
-                            <img class="mr-3" src="assets/frontend/leadmark/public_html/assets/imgs/avatar-2.jpg" alt="">
+                            <img class="mr-3" src="assets/frontend/leadmark/public_html/assets/imgs/dyf.jpg" alt="">
                             <div class="media-body">
                                 <h6 class="mt-1 mb-0">
                                     <?= $tmp == null ? "专业团队" : $captain->name ?>
@@ -57,7 +57,7 @@ $teamers = \common\models\TeamMember::findAll(['captain' => 0]);
                 <div class="card">
                     <div class="card-body">
                         <div class="media align-items-center mb-3">
-                            <img class="mr-3" src="assets/frontend/leadmark/public_html/assets/imgs/avatar.jpg" alt="">
+                            <img class="mr-3" src="assets/frontend/leadmark/public_html/assets/imgs/hyx.jpg" alt="">
                             <div class="media-body">
                                 <h6 class="mt-1 mb-0">
                                     <?= $tmp == null ? "专业团队" : $teamers[0]->name ?>
@@ -80,7 +80,7 @@ $teamers = \common\models\TeamMember::findAll(['captain' => 0]);
                 <div class="card">
                     <div class="card-body">
                         <div class="media align-items-center mb-3">
-                            <img class="mr-3" src="assets/frontend/leadmark/public_html/assets/imgs/avatar-1.jpg" alt="">
+                            <img class="mr-3" src="assets/frontend/leadmark/public_html/assets/imgs/cjn.jpg" alt="">
                             <div class="media-body">
                                 <h6 class="mt-1 mb-0">
                                     <?= $tmp == null ? "专业团队" : $teamers[1]->name ?> 
@@ -100,7 +100,7 @@ $teamers = \common\models\TeamMember::findAll(['captain' => 0]);
                 <div class="card">
                     <div class="card-body">
                         <div class="media align-items-center mb-3">
-                            <img class="mr-3" src="assets/frontend/leadmark/public_html/assets/imgs/avatar-2.jpg" alt="">
+                            <img class="mr-3" src="assets/frontend/leadmark/public_html/assets/imgs/xjq.jpg" alt="">
                             <div class="media-body">
                                 <h6 class="mt-1 mb-0">
                                     <?= $tmp == null ? "专业团队" : $teamers[2]->name ?>
