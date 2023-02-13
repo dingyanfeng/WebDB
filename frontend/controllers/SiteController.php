@@ -1,5 +1,11 @@
 <?php
 
+/*
+ * Team：EW_WAR
+ * Coding By：所有人
+ * 前台主控制器
+ */
+
 namespace frontend\controllers;
 
 use frontend\models\ResendVerificationEmailForm;

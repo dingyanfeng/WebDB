@@ -1,5 +1,12 @@
 <?php
 
+
+/*
+ * Team：EW_WAR
+ * Coding By：薛家琪、丁延峰
+ * 主页面(前台)
+*/
+
 /** @var yii\web\View $this */
 use yii\helpers\Html;
 use yii\helpers\Url;

@@ -1,10 +1,6 @@
 <?php
 
-/**
- * Team：EW_WAR
- * Coding By：黄逸轩
- * 本模型为接受前台新闻评论的数据模型，接收完数据后由/common/comment.php传入数据库
- */
+
 
 namespace backend\models;
 

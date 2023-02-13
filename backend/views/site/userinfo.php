@@ -1,5 +1,12 @@
 <?php
 
+/*
+ * Team：EW_WAR
+ * Coding By：丁延峰，黄逸轩
+ * 用户信息
+*/
+
+
 $user = \common\models\User::findAll(['type' => 0]);
 $cnt = sizeof($user);
 

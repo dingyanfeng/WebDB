@@ -1,5 +1,10 @@
 <?php
 
+/*
+ * Team：EW_WAR
+ * Coding By：程佳诺
+*/
+
 /** @var yii\web\View $this */
 /** @var yii\bootstrap5\ActiveForm $form */
 /** @var \common\models\news $model */

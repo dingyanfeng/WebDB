@@ -1,5 +1,11 @@
 <?php
 
+/*
+ * Team：EW_WAR
+ * Coding By：薛家琪
+ * 冲突管理
+*/
+
 namespace frontend\controllers;
 
 use frontend\models\collision;
