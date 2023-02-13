@@ -306,10 +306,10 @@ $Refugee_belarus = \common\models\Refugee::findOne(['destination' => '白俄罗�
                 <div class="widget">
                     <h3>相关网站</h3>
                     <ul class="nav-link">
-                        <li><a href="https://www.aljazeera.com/">半岛电视台</a></li>
+                        <li><a href="http://www.news.cn/world/dgwj/wkljs/index.htm/">乌克兰局势_新华网</a></li>
                         <li><a href="https://www.zhihu.com/">去知乎搜索</a></li>
                         <li><a href="https://www.baidu.com/">去百度搜索</a></li>
-                        <li><a href="http://www.xinhuanet.com/">新华网</a></li>
+                        <li><a href="https://mil.news.sina.com.cn/">新浪军事</a></li>
                     </ul>
                 </div>
                 <!-- END: .widget -->
