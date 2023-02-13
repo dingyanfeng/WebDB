@@ -113,38 +113,11 @@ class User extends ActiveRecord implements IdentityInterface
         return true;
     }
 
-    // 获取所有的居民
-    // public function getResident()
-    // {
-    //     return $this->hasOne(Resident::className(), ['account' => 'account']);
-    // }
-
-    // 获取所有的职员
-    // public function getCommittee()
-    // {
-    //     return $this->hasOne(Committee::className(), ['account' => 'account']);
-    // }
-
-    // public function getHealth()
-    // {
-    //     return $this->hasOne(Health::className(), ['account' => 'account']);
-    // }
-
-    // public function getTransactions()
-    // {
-    //     return $this->hasOne(Transactions::className(), ['account' => 'account']);
-    // }
-
     // basic setters
     public function setAccount($account)
     {
         $this->account = $account;
     }
-
-    // public function setName($name)
-    // {
-    //     $this->name = $name;
-    // }
 
 
     public function setTel($tel)
@@ -158,10 +131,6 @@ class User extends ActiveRecord implements IdentityInterface
         $this->type = $type;
     }
 
-    // public function visitors(){
-    //     $query = User::find()->where(['type' => 3])->all();
-    //     return count($query);
-    // }
 }
 
 

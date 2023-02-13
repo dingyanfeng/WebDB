@@ -165,9 +165,6 @@ class SiteController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->signup()) {
             Yii::$app->session->setFlash('success', 'Thank you for registration. Please check your inbox for verification email.');
             return $this->goHome();
-            // return $this->render('index', [
-            //     'message' => "您已成功注册成为社区会员，请登录您的账户。"
-            // ]);
         }
 
         return $this->render('signup', [
@@ -207,30 +204,6 @@ class SiteController extends Controller
         ]);
     }
 
-    
-
-    /**
-     * Requests password reset.
-     *
-     * @return mixed
-     */
-    // public function actionRequestPasswordReset()
-    // {
-    //     $model = new PasswordResetRequestForm();
-    //     if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-    //         if ($model->sendEmail()) {
-    //             Yii::$app->session->setFlash('success', 'Check your email for further instructions.');
-
-    //             return $this->goHome();
-    //         }
-
-    //         Yii::$app->session->setFlash('error', 'Sorry, we are unable to reset password for the provided email address.');
-    //     }
-
-    //     return $this->render('requestPasswordResetToken', [
-    //         'model' => $model,
-    //     ]);
-    // }
 
     /**
      * Resets password.

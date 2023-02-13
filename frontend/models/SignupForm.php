@@ -61,23 +61,4 @@ class SignupForm extends Model
         
         return $user->save();
     }
-
-    /**
-     * Sends confirmation email to user
-     * @param User $user user model to with email should be send
-     * @return bool whether the email was sent
-     */
-    // protected function sendEmail($user)
-    // {
-    //     return Yii::$app
-    //         ->mailer
-    //         ->compose(
-    //             ['html' => 'emailVerify-html', 'text' => 'emailVerify-text'],
-    //             ['user' => $user]
-    //         )
-    //         ->setFrom([Yii::$app->params['supportEmail'] => Yii::$app->name . ' robot'])
-    //         ->setTo($this->email)
-    //         ->setSubject('Account registration at ' . Yii::$app->name)
-    //         ->send();
-    // }
 }

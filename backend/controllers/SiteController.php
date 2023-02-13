@@ -137,32 +137,5 @@ class SiteController extends Controller
         );
     }
 
-    // public function actionDeletecomments()
-    // {
-        // if (Yii::$app->user->isGuest)
-            // return $this->goHome();
-        // find certain news
-        // $news = news::findAll(['id' => 4]);
-        
-        // $model = new DeleteCommentForm();
-        
-        // if ($model->load(Yii::$app->request->post()))
-        // {
-        //     if ($model->submit())
-        //     {
-        //         $delete_id = $model->delete_id;
-        //         $comment = Comment::findOne(['id' => $delete_id]);
-        //         $comment->delete()();
-        //         return $this->redirect(array('/site/managecomments', 'message' => '发布成功！', 'id' => 4));
-        //     }
-        // }
-
-        // return $this->render('comment4', [
-        //     'news' => $news,
-        //     'comment' => $comment,
-        //     'model' => $model,
-        // ]);
-    // }
-
     
 }
