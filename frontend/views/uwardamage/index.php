@@ -16,7 +16,10 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="uwardamage-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
-
+    <img src="assets/frontend/leadmark/public_html/assets/imgs/blog-6.jpg" alt="" class="card" style="width: 600px;">
+	<p>
+        <font size="4">乌克兰空军已经损失了302架军用飞机（这个数字应该包括在地面上被摧毁的退役军用飞机），212架直升机，2750辆汽车，6320辆坦克和装甲车（乌克兰为什么现在急着让北约国家提供坦克的原因所在），7360门火炮系统，497部防空系统。</font>
+    </p>
     <p>
         <?= Html::a('Create Uwardamage', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
