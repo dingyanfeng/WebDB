@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    button {
+      margin: 0 10px;
+    }
+    #result {
+      margin-top: 10px;
+    }
+    input, button {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="result"></div>
+  <br />
+  <input type="text" id="inputText" />
+  <button id="btnCheck">检查输入内容</button>
+  <div class="container">
+    <button id="btnWeather">天气</button>
+    <button id="btnTemperature">温度</button>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $("#btnWeather").click(function() {
+        $("#result").text("晴天");
+      });
+      $("#btnTemperature").dblclick(function() {
+        $("#result").text("25度");
+      });
+      $("#btnTemperature").click(function() {
+        $("#result").text("双击获取温度情况");
+      });
+      $("#btnCheck").click(function() {
+        if ($("#inputText").val() == "123") {
+          $("#result").text("success");
+        } else {
+          $("#result").text("wrong");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

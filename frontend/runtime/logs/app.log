@@ -2066,3 +2066,628 @@ $_SERVER = [
     'REQUEST_TIME' => 1676095550
 >>>>>>> be41312ade240861f7f5e67b3d6b49d0831ee438
 ]
+2023-02-14 10:10:37 [::1][111111111111111111][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 47060 bytes' 
+
+in C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php:151
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\xampp\\htdocs...', 151)
+#1 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php(151): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php(79): yii\debug\LogTarget->updateIndexFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php(182): yii\debug\LogTarget->export()
+#4 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2023-02-14 10:10:37 [::1][111111111111111111][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Pycharm-a1a598e2' => '7cdbba08-9ef7-4e18-a9af-25f24e5a2543'
+    '_identity-backend' => '8524e16508a9ce9dee33cd91046de7ea3f6165597e307a15c14b87458c9ea145a:2:{i:0;s:17:\"_identity-backend\";i:1;s:65:\"[\"111111111111111111\",\"ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc\",2592000]\";}'
+    'advanced-frontend' => '465ponae4n0kq0a46bhpr5nnt6'
+    '_identity-frontend' => '12121c34548aca4609bb9225395af3bd2772715a9c4956f4e52a09d25f365390a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:65:\"[\"111111111111111111\",\"ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc\",2592000]\";}'
+    '_csrf-frontend' => '0030de4914c2182188f7f3eb71ac329a26af0f78386132cefdd592e9202ab472a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ILjJtbwtWiLNUF1bJ6Z9efMN2AmbDjCm\";}'
+    'advanced-backend' => 'chargqaf91g7p314rnb10dnt4r'
+    '_csrf-backend' => '37d0d989aa40e65099e8dee4125c8dc2e3ab64a979366c3af8716ee430cc2e91a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"PrRt-gq8hyu9kxciJCgyYWUNccGuc6rn\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '111111111111111111'
+    '__authKey' => 'ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/advanced/webDB/frontend/web/index.php?r=site%2Fabout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'Pycharm-a1a598e2=7cdbba08-9ef7-4e18-a9af-25f24e5a2543; _identity-backend=8524e16508a9ce9dee33cd91046de7ea3f6165597e307a15c14b87458c9ea145a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A65%3A%22%5B%22111111111111111111%22%2C%22ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc%22%2C2592000%5D%22%3B%7D; advanced-frontend=465ponae4n0kq0a46bhpr5nnt6; _identity-frontend=12121c34548aca4609bb9225395af3bd2772715a9c4956f4e52a09d25f365390a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A65%3A%22%5B%22111111111111111111%22%2C%22ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc%22%2C2592000%5D%22%3B%7D; _csrf-frontend=0030de4914c2182188f7f3eb71ac329a26af0f78386132cefdd592e9202ab472a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ILjJtbwtWiLNUF1bJ6Z9efMN2AmbDjCm%22%3B%7D; advanced-backend=chargqaf91g7p314rnb10dnt4r; _csrf-backend=37d0d989aa40e65099e8dee4125c8dc2e3ab64a979366c3af8716ee430cc2e91a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22PrRt-gq8hyu9kxciJCgyYWUNccGuc6rn%22%3B%7D'
+    'PATH' => 'E:\\Anaconda_;E:\\Anaconda_\\Library\\mingw-w64\\bin;E:\\Anaconda_\\Library\\usr\\bin;E:\\Anaconda_\\Library\\bin;E:\\Anaconda_\\Scripts;C:\\Program Files\\Microsoft MPI\\Bin\\;E:\\NKU\\tools\\apache-maven-3.6.1\\bin;E:\\NKU\\data\\hadoop\\windows\\hadoop-3.1.0\\bin;D:\\java\\jdk1.8\\bin;D:\\java\\jdk1.8-jre\\bin;D:\\TDM-GCC-64\\TDM-GCC-64\\bin;D:\\TDM-GCC\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\Strawberry\\c\\bin;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Program Files\\MATLAB\\R2016b\\runtime\\win64;D:\\Program Files\\MATLAB\\R2016b\\bin;D:\\Program Files\\MATLAB\\R2016b\\polyspace\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\anaconda;D:\\anaconda\\Scripts;D:\\anaconda\\Library\\bin;D:\\anaconda\\Library\\mingw-w64\\bin;D:\\Python;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.0\\;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files\\Git\\cmd;D:\\java\\bin;C:\\Program Files (x86)\\ZeroTier\\One\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\dingyanfeng\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\VScode\\Microsoft VS Code\\bin;D:\\pycharm\\PyCharm Community Edition 2021.2.2\\bin;;C:\\Users\\dingyanfeng\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/Yii'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/Yii'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Yii/advanced/webDB/frontend/web/index.php'
+    'REMOTE_PORT' => '64771'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/advanced/webDB/frontend/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/advanced/webDB/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/webDB/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1676365837.5501
+    'REQUEST_TIME' => 1676365837
+]
+2023-02-14 10:10:43 [::1][111111111111111111][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 47060 bytes' 
+
+in C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php:151
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\xampp\\htdocs...', 151)
+#1 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php(151): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php(79): yii\debug\LogTarget->updateIndexFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php(182): yii\debug\LogTarget->export()
+#4 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2023-02-14 10:10:43 [::1][111111111111111111][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Pycharm-a1a598e2' => '7cdbba08-9ef7-4e18-a9af-25f24e5a2543'
+    '_identity-backend' => '8524e16508a9ce9dee33cd91046de7ea3f6165597e307a15c14b87458c9ea145a:2:{i:0;s:17:\"_identity-backend\";i:1;s:65:\"[\"111111111111111111\",\"ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc\",2592000]\";}'
+    'advanced-frontend' => '465ponae4n0kq0a46bhpr5nnt6'
+    '_identity-frontend' => '12121c34548aca4609bb9225395af3bd2772715a9c4956f4e52a09d25f365390a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:65:\"[\"111111111111111111\",\"ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc\",2592000]\";}'
+    '_csrf-frontend' => '0030de4914c2182188f7f3eb71ac329a26af0f78386132cefdd592e9202ab472a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ILjJtbwtWiLNUF1bJ6Z9efMN2AmbDjCm\";}'
+    'advanced-backend' => 'chargqaf91g7p314rnb10dnt4r'
+    '_csrf-backend' => '37d0d989aa40e65099e8dee4125c8dc2e3ab64a979366c3af8716ee430cc2e91a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"PrRt-gq8hyu9kxciJCgyYWUNccGuc6rn\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '111111111111111111'
+    '__authKey' => 'ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/advanced/webDB/frontend/web/index.php?r=site%2Fabout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'Pycharm-a1a598e2=7cdbba08-9ef7-4e18-a9af-25f24e5a2543; _identity-backend=8524e16508a9ce9dee33cd91046de7ea3f6165597e307a15c14b87458c9ea145a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A65%3A%22%5B%22111111111111111111%22%2C%22ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc%22%2C2592000%5D%22%3B%7D; advanced-frontend=465ponae4n0kq0a46bhpr5nnt6; _identity-frontend=12121c34548aca4609bb9225395af3bd2772715a9c4956f4e52a09d25f365390a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A65%3A%22%5B%22111111111111111111%22%2C%22ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc%22%2C2592000%5D%22%3B%7D; _csrf-frontend=0030de4914c2182188f7f3eb71ac329a26af0f78386132cefdd592e9202ab472a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ILjJtbwtWiLNUF1bJ6Z9efMN2AmbDjCm%22%3B%7D; advanced-backend=chargqaf91g7p314rnb10dnt4r; _csrf-backend=37d0d989aa40e65099e8dee4125c8dc2e3ab64a979366c3af8716ee430cc2e91a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22PrRt-gq8hyu9kxciJCgyYWUNccGuc6rn%22%3B%7D'
+    'PATH' => 'E:\\Anaconda_;E:\\Anaconda_\\Library\\mingw-w64\\bin;E:\\Anaconda_\\Library\\usr\\bin;E:\\Anaconda_\\Library\\bin;E:\\Anaconda_\\Scripts;C:\\Program Files\\Microsoft MPI\\Bin\\;E:\\NKU\\tools\\apache-maven-3.6.1\\bin;E:\\NKU\\data\\hadoop\\windows\\hadoop-3.1.0\\bin;D:\\java\\jdk1.8\\bin;D:\\java\\jdk1.8-jre\\bin;D:\\TDM-GCC-64\\TDM-GCC-64\\bin;D:\\TDM-GCC\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\Strawberry\\c\\bin;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Program Files\\MATLAB\\R2016b\\runtime\\win64;D:\\Program Files\\MATLAB\\R2016b\\bin;D:\\Program Files\\MATLAB\\R2016b\\polyspace\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\anaconda;D:\\anaconda\\Scripts;D:\\anaconda\\Library\\bin;D:\\anaconda\\Library\\mingw-w64\\bin;D:\\Python;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.0\\;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files\\Git\\cmd;D:\\java\\bin;C:\\Program Files (x86)\\ZeroTier\\One\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\dingyanfeng\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\VScode\\Microsoft VS Code\\bin;D:\\pycharm\\PyCharm Community Edition 2021.2.2\\bin;;C:\\Users\\dingyanfeng\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/Yii'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/Yii'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Yii/advanced/webDB/frontend/web/index.php'
+    'REMOTE_PORT' => '64782'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/advanced/webDB/frontend/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/advanced/webDB/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/webDB/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1676365843.2645
+    'REQUEST_TIME' => 1676365843
+]
+2023-02-14 10:10:44 [::1][111111111111111111][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 47060 bytes' 
+
+in C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php:151
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\xampp\\htdocs...', 151)
+#1 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php(151): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php(79): yii\debug\LogTarget->updateIndexFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php(182): yii\debug\LogTarget->export()
+#4 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2023-02-14 10:10:44 [::1][111111111111111111][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Pycharm-a1a598e2' => '7cdbba08-9ef7-4e18-a9af-25f24e5a2543'
+    '_identity-backend' => '8524e16508a9ce9dee33cd91046de7ea3f6165597e307a15c14b87458c9ea145a:2:{i:0;s:17:\"_identity-backend\";i:1;s:65:\"[\"111111111111111111\",\"ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc\",2592000]\";}'
+    'advanced-frontend' => '465ponae4n0kq0a46bhpr5nnt6'
+    '_identity-frontend' => '12121c34548aca4609bb9225395af3bd2772715a9c4956f4e52a09d25f365390a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:65:\"[\"111111111111111111\",\"ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc\",2592000]\";}'
+    '_csrf-frontend' => '0030de4914c2182188f7f3eb71ac329a26af0f78386132cefdd592e9202ab472a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ILjJtbwtWiLNUF1bJ6Z9efMN2AmbDjCm\";}'
+    'advanced-backend' => 'chargqaf91g7p314rnb10dnt4r'
+    '_csrf-backend' => '37d0d989aa40e65099e8dee4125c8dc2e3ab64a979366c3af8716ee430cc2e91a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"PrRt-gq8hyu9kxciJCgyYWUNccGuc6rn\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '111111111111111111'
+    '__authKey' => 'ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/advanced/webDB/frontend/web/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'Pycharm-a1a598e2=7cdbba08-9ef7-4e18-a9af-25f24e5a2543; _identity-backend=8524e16508a9ce9dee33cd91046de7ea3f6165597e307a15c14b87458c9ea145a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A65%3A%22%5B%22111111111111111111%22%2C%22ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc%22%2C2592000%5D%22%3B%7D; advanced-frontend=465ponae4n0kq0a46bhpr5nnt6; _identity-frontend=12121c34548aca4609bb9225395af3bd2772715a9c4956f4e52a09d25f365390a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A65%3A%22%5B%22111111111111111111%22%2C%22ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc%22%2C2592000%5D%22%3B%7D; _csrf-frontend=0030de4914c2182188f7f3eb71ac329a26af0f78386132cefdd592e9202ab472a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ILjJtbwtWiLNUF1bJ6Z9efMN2AmbDjCm%22%3B%7D; advanced-backend=chargqaf91g7p314rnb10dnt4r; _csrf-backend=37d0d989aa40e65099e8dee4125c8dc2e3ab64a979366c3af8716ee430cc2e91a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22PrRt-gq8hyu9kxciJCgyYWUNccGuc6rn%22%3B%7D'
+    'PATH' => 'E:\\Anaconda_;E:\\Anaconda_\\Library\\mingw-w64\\bin;E:\\Anaconda_\\Library\\usr\\bin;E:\\Anaconda_\\Library\\bin;E:\\Anaconda_\\Scripts;C:\\Program Files\\Microsoft MPI\\Bin\\;E:\\NKU\\tools\\apache-maven-3.6.1\\bin;E:\\NKU\\data\\hadoop\\windows\\hadoop-3.1.0\\bin;D:\\java\\jdk1.8\\bin;D:\\java\\jdk1.8-jre\\bin;D:\\TDM-GCC-64\\TDM-GCC-64\\bin;D:\\TDM-GCC\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\Strawberry\\c\\bin;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Program Files\\MATLAB\\R2016b\\runtime\\win64;D:\\Program Files\\MATLAB\\R2016b\\bin;D:\\Program Files\\MATLAB\\R2016b\\polyspace\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\anaconda;D:\\anaconda\\Scripts;D:\\anaconda\\Library\\bin;D:\\anaconda\\Library\\mingw-w64\\bin;D:\\Python;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.0\\;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files\\Git\\cmd;D:\\java\\bin;C:\\Program Files (x86)\\ZeroTier\\One\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\dingyanfeng\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\VScode\\Microsoft VS Code\\bin;D:\\pycharm\\PyCharm Community Edition 2021.2.2\\bin;;C:\\Users\\dingyanfeng\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/Yii'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/Yii'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Yii/advanced/webDB/frontend/web/index.php'
+    'REMOTE_PORT' => '64786'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/advanced/webDB/frontend/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/advanced/webDB/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/webDB/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1676365844.3154
+    'REQUEST_TIME' => 1676365844
+]
+2023-02-14 10:10:46 [::1][111111111111111111][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 47060 bytes' 
+
+in C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php:151
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\xampp\\htdocs...', 151)
+#1 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php(151): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php(79): yii\debug\LogTarget->updateIndexFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php(182): yii\debug\LogTarget->export()
+#4 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2023-02-14 10:10:46 [::1][111111111111111111][-][info][application] $_GET = [
+    'r' => 'site/news'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Pycharm-a1a598e2' => '7cdbba08-9ef7-4e18-a9af-25f24e5a2543'
+    '_identity-backend' => '8524e16508a9ce9dee33cd91046de7ea3f6165597e307a15c14b87458c9ea145a:2:{i:0;s:17:\"_identity-backend\";i:1;s:65:\"[\"111111111111111111\",\"ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc\",2592000]\";}'
+    'advanced-frontend' => '465ponae4n0kq0a46bhpr5nnt6'
+    '_identity-frontend' => '12121c34548aca4609bb9225395af3bd2772715a9c4956f4e52a09d25f365390a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:65:\"[\"111111111111111111\",\"ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc\",2592000]\";}'
+    '_csrf-frontend' => '0030de4914c2182188f7f3eb71ac329a26af0f78386132cefdd592e9202ab472a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ILjJtbwtWiLNUF1bJ6Z9efMN2AmbDjCm\";}'
+    'advanced-backend' => 'chargqaf91g7p314rnb10dnt4r'
+    '_csrf-backend' => '37d0d989aa40e65099e8dee4125c8dc2e3ab64a979366c3af8716ee430cc2e91a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"PrRt-gq8hyu9kxciJCgyYWUNccGuc6rn\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '111111111111111111'
+    '__authKey' => 'ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/advanced/webDB/frontend/web/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'Pycharm-a1a598e2=7cdbba08-9ef7-4e18-a9af-25f24e5a2543; _identity-backend=8524e16508a9ce9dee33cd91046de7ea3f6165597e307a15c14b87458c9ea145a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A65%3A%22%5B%22111111111111111111%22%2C%22ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc%22%2C2592000%5D%22%3B%7D; advanced-frontend=465ponae4n0kq0a46bhpr5nnt6; _identity-frontend=12121c34548aca4609bb9225395af3bd2772715a9c4956f4e52a09d25f365390a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A65%3A%22%5B%22111111111111111111%22%2C%22ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc%22%2C2592000%5D%22%3B%7D; _csrf-frontend=0030de4914c2182188f7f3eb71ac329a26af0f78386132cefdd592e9202ab472a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ILjJtbwtWiLNUF1bJ6Z9efMN2AmbDjCm%22%3B%7D; advanced-backend=chargqaf91g7p314rnb10dnt4r; _csrf-backend=37d0d989aa40e65099e8dee4125c8dc2e3ab64a979366c3af8716ee430cc2e91a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22PrRt-gq8hyu9kxciJCgyYWUNccGuc6rn%22%3B%7D'
+    'PATH' => 'E:\\Anaconda_;E:\\Anaconda_\\Library\\mingw-w64\\bin;E:\\Anaconda_\\Library\\usr\\bin;E:\\Anaconda_\\Library\\bin;E:\\Anaconda_\\Scripts;C:\\Program Files\\Microsoft MPI\\Bin\\;E:\\NKU\\tools\\apache-maven-3.6.1\\bin;E:\\NKU\\data\\hadoop\\windows\\hadoop-3.1.0\\bin;D:\\java\\jdk1.8\\bin;D:\\java\\jdk1.8-jre\\bin;D:\\TDM-GCC-64\\TDM-GCC-64\\bin;D:\\TDM-GCC\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\Strawberry\\c\\bin;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Program Files\\MATLAB\\R2016b\\runtime\\win64;D:\\Program Files\\MATLAB\\R2016b\\bin;D:\\Program Files\\MATLAB\\R2016b\\polyspace\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\anaconda;D:\\anaconda\\Scripts;D:\\anaconda\\Library\\bin;D:\\anaconda\\Library\\mingw-w64\\bin;D:\\Python;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.0\\;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files\\Git\\cmd;D:\\java\\bin;C:\\Program Files (x86)\\ZeroTier\\One\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\dingyanfeng\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\VScode\\Microsoft VS Code\\bin;D:\\pycharm\\PyCharm Community Edition 2021.2.2\\bin;;C:\\Users\\dingyanfeng\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/Yii'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/Yii'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Yii/advanced/webDB/frontend/web/index.php'
+    'REMOTE_PORT' => '64784'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fnews'
+    'REQUEST_URI' => '/advanced/webDB/frontend/web/index.php?r=site%2Fnews'
+    'SCRIPT_NAME' => '/advanced/webDB/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/webDB/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1676365846.2501
+    'REQUEST_TIME' => 1676365846
+]
+2023-02-14 10:10:48 [::1][111111111111111111][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 47060 bytes' 
+
+in C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php:151
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\xampp\\htdocs...', 151)
+#1 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php(151): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php(79): yii\debug\LogTarget->updateIndexFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php(182): yii\debug\LogTarget->export()
+#4 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2023-02-14 10:10:48 [::1][111111111111111111][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Pycharm-a1a598e2' => '7cdbba08-9ef7-4e18-a9af-25f24e5a2543'
+    '_identity-backend' => '8524e16508a9ce9dee33cd91046de7ea3f6165597e307a15c14b87458c9ea145a:2:{i:0;s:17:\"_identity-backend\";i:1;s:65:\"[\"111111111111111111\",\"ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc\",2592000]\";}'
+    'advanced-frontend' => '465ponae4n0kq0a46bhpr5nnt6'
+    '_identity-frontend' => '12121c34548aca4609bb9225395af3bd2772715a9c4956f4e52a09d25f365390a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:65:\"[\"111111111111111111\",\"ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc\",2592000]\";}'
+    '_csrf-frontend' => '0030de4914c2182188f7f3eb71ac329a26af0f78386132cefdd592e9202ab472a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ILjJtbwtWiLNUF1bJ6Z9efMN2AmbDjCm\";}'
+    'advanced-backend' => 'chargqaf91g7p314rnb10dnt4r'
+    '_csrf-backend' => '37d0d989aa40e65099e8dee4125c8dc2e3ab64a979366c3af8716ee430cc2e91a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"PrRt-gq8hyu9kxciJCgyYWUNccGuc6rn\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '111111111111111111'
+    '__authKey' => 'ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/advanced/webDB/frontend/web/index.php?r=site%2Fnews'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'Pycharm-a1a598e2=7cdbba08-9ef7-4e18-a9af-25f24e5a2543; _identity-backend=8524e16508a9ce9dee33cd91046de7ea3f6165597e307a15c14b87458c9ea145a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A65%3A%22%5B%22111111111111111111%22%2C%22ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc%22%2C2592000%5D%22%3B%7D; advanced-frontend=465ponae4n0kq0a46bhpr5nnt6; _identity-frontend=12121c34548aca4609bb9225395af3bd2772715a9c4956f4e52a09d25f365390a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A65%3A%22%5B%22111111111111111111%22%2C%22ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc%22%2C2592000%5D%22%3B%7D; _csrf-frontend=0030de4914c2182188f7f3eb71ac329a26af0f78386132cefdd592e9202ab472a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ILjJtbwtWiLNUF1bJ6Z9efMN2AmbDjCm%22%3B%7D; advanced-backend=chargqaf91g7p314rnb10dnt4r; _csrf-backend=37d0d989aa40e65099e8dee4125c8dc2e3ab64a979366c3af8716ee430cc2e91a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22PrRt-gq8hyu9kxciJCgyYWUNccGuc6rn%22%3B%7D'
+    'PATH' => 'E:\\Anaconda_;E:\\Anaconda_\\Library\\mingw-w64\\bin;E:\\Anaconda_\\Library\\usr\\bin;E:\\Anaconda_\\Library\\bin;E:\\Anaconda_\\Scripts;C:\\Program Files\\Microsoft MPI\\Bin\\;E:\\NKU\\tools\\apache-maven-3.6.1\\bin;E:\\NKU\\data\\hadoop\\windows\\hadoop-3.1.0\\bin;D:\\java\\jdk1.8\\bin;D:\\java\\jdk1.8-jre\\bin;D:\\TDM-GCC-64\\TDM-GCC-64\\bin;D:\\TDM-GCC\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\Strawberry\\c\\bin;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Program Files\\MATLAB\\R2016b\\runtime\\win64;D:\\Program Files\\MATLAB\\R2016b\\bin;D:\\Program Files\\MATLAB\\R2016b\\polyspace\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\anaconda;D:\\anaconda\\Scripts;D:\\anaconda\\Library\\bin;D:\\anaconda\\Library\\mingw-w64\\bin;D:\\Python;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.0\\;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files\\Git\\cmd;D:\\java\\bin;C:\\Program Files (x86)\\ZeroTier\\One\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\dingyanfeng\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\VScode\\Microsoft VS Code\\bin;D:\\pycharm\\PyCharm Community Edition 2021.2.2\\bin;;C:\\Users\\dingyanfeng\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/Yii'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/Yii'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Yii/advanced/webDB/frontend/web/index.php'
+    'REMOTE_PORT' => '64787'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/advanced/webDB/frontend/web/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/advanced/webDB/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/webDB/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1676365848.0445
+    'REQUEST_TIME' => 1676365848
+]
+2023-02-14 10:10:50 [::1][111111111111111111][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 47060 bytes' 
+
+in C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php:151
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\xampp\\htdocs...', 151)
+#1 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php(151): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php(79): yii\debug\LogTarget->updateIndexFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php(182): yii\debug\LogTarget->export()
+#4 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2023-02-14 10:10:50 [::1][111111111111111111][-][info][application] $_GET = [
+    'r' => 'usupport/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Pycharm-a1a598e2' => '7cdbba08-9ef7-4e18-a9af-25f24e5a2543'
+    '_identity-backend' => '8524e16508a9ce9dee33cd91046de7ea3f6165597e307a15c14b87458c9ea145a:2:{i:0;s:17:\"_identity-backend\";i:1;s:65:\"[\"111111111111111111\",\"ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc\",2592000]\";}'
+    'advanced-frontend' => '465ponae4n0kq0a46bhpr5nnt6'
+    '_identity-frontend' => '12121c34548aca4609bb9225395af3bd2772715a9c4956f4e52a09d25f365390a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:65:\"[\"111111111111111111\",\"ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc\",2592000]\";}'
+    '_csrf-frontend' => '0030de4914c2182188f7f3eb71ac329a26af0f78386132cefdd592e9202ab472a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ILjJtbwtWiLNUF1bJ6Z9efMN2AmbDjCm\";}'
+    'advanced-backend' => 'chargqaf91g7p314rnb10dnt4r'
+    '_csrf-backend' => '37d0d989aa40e65099e8dee4125c8dc2e3ab64a979366c3af8716ee430cc2e91a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"PrRt-gq8hyu9kxciJCgyYWUNccGuc6rn\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '111111111111111111'
+    '__authKey' => 'ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/advanced/webDB/frontend/web/index.php?r=site%2Fabout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'Pycharm-a1a598e2=7cdbba08-9ef7-4e18-a9af-25f24e5a2543; _identity-backend=8524e16508a9ce9dee33cd91046de7ea3f6165597e307a15c14b87458c9ea145a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A65%3A%22%5B%22111111111111111111%22%2C%22ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc%22%2C2592000%5D%22%3B%7D; advanced-frontend=465ponae4n0kq0a46bhpr5nnt6; _identity-frontend=12121c34548aca4609bb9225395af3bd2772715a9c4956f4e52a09d25f365390a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A65%3A%22%5B%22111111111111111111%22%2C%22ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc%22%2C2592000%5D%22%3B%7D; _csrf-frontend=0030de4914c2182188f7f3eb71ac329a26af0f78386132cefdd592e9202ab472a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ILjJtbwtWiLNUF1bJ6Z9efMN2AmbDjCm%22%3B%7D; advanced-backend=chargqaf91g7p314rnb10dnt4r; _csrf-backend=37d0d989aa40e65099e8dee4125c8dc2e3ab64a979366c3af8716ee430cc2e91a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22PrRt-gq8hyu9kxciJCgyYWUNccGuc6rn%22%3B%7D'
+    'PATH' => 'E:\\Anaconda_;E:\\Anaconda_\\Library\\mingw-w64\\bin;E:\\Anaconda_\\Library\\usr\\bin;E:\\Anaconda_\\Library\\bin;E:\\Anaconda_\\Scripts;C:\\Program Files\\Microsoft MPI\\Bin\\;E:\\NKU\\tools\\apache-maven-3.6.1\\bin;E:\\NKU\\data\\hadoop\\windows\\hadoop-3.1.0\\bin;D:\\java\\jdk1.8\\bin;D:\\java\\jdk1.8-jre\\bin;D:\\TDM-GCC-64\\TDM-GCC-64\\bin;D:\\TDM-GCC\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\Strawberry\\c\\bin;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Program Files\\MATLAB\\R2016b\\runtime\\win64;D:\\Program Files\\MATLAB\\R2016b\\bin;D:\\Program Files\\MATLAB\\R2016b\\polyspace\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\anaconda;D:\\anaconda\\Scripts;D:\\anaconda\\Library\\bin;D:\\anaconda\\Library\\mingw-w64\\bin;D:\\Python;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.0\\;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files\\Git\\cmd;D:\\java\\bin;C:\\Program Files (x86)\\ZeroTier\\One\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\dingyanfeng\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\VScode\\Microsoft VS Code\\bin;D:\\pycharm\\PyCharm Community Edition 2021.2.2\\bin;;C:\\Users\\dingyanfeng\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/Yii'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/Yii'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Yii/advanced/webDB/frontend/web/index.php'
+    'REMOTE_PORT' => '64788'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=usupport%2Findex'
+    'REQUEST_URI' => '/advanced/webDB/frontend/web/index.php?r=usupport%2Findex'
+    'SCRIPT_NAME' => '/advanced/webDB/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/webDB/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1676365850.3407
+    'REQUEST_TIME' => 1676365850
+]
+2023-02-14 10:10:53 [::1][111111111111111111][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 47060 bytes' 
+
+in C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php:151
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\xampp\\htdocs...', 151)
+#1 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php(151): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php(79): yii\debug\LogTarget->updateIndexFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2-debug\src\LogTarget.php(182): yii\debug\LogTarget->export()
+#4 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xampp\htdocs\Yii\advanced\webDB\vendor\yiisoft\yii2\log\Logger.php(226): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2023-02-14 10:10:53 [::1][111111111111111111][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Pycharm-a1a598e2' => '7cdbba08-9ef7-4e18-a9af-25f24e5a2543'
+    '_identity-backend' => '8524e16508a9ce9dee33cd91046de7ea3f6165597e307a15c14b87458c9ea145a:2:{i:0;s:17:\"_identity-backend\";i:1;s:65:\"[\"111111111111111111\",\"ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc\",2592000]\";}'
+    'advanced-frontend' => '465ponae4n0kq0a46bhpr5nnt6'
+    '_identity-frontend' => '12121c34548aca4609bb9225395af3bd2772715a9c4956f4e52a09d25f365390a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:65:\"[\"111111111111111111\",\"ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc\",2592000]\";}'
+    '_csrf-frontend' => '0030de4914c2182188f7f3eb71ac329a26af0f78386132cefdd592e9202ab472a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ILjJtbwtWiLNUF1bJ6Z9efMN2AmbDjCm\";}'
+    'advanced-backend' => 'chargqaf91g7p314rnb10dnt4r'
+    '_csrf-backend' => '37d0d989aa40e65099e8dee4125c8dc2e3ab64a979366c3af8716ee430cc2e91a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"PrRt-gq8hyu9kxciJCgyYWUNccGuc6rn\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '111111111111111111'
+    '__authKey' => 'ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8090/advanced/webDB/frontend/web/index.php?r=usupport%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'Pycharm-a1a598e2=7cdbba08-9ef7-4e18-a9af-25f24e5a2543; _identity-backend=8524e16508a9ce9dee33cd91046de7ea3f6165597e307a15c14b87458c9ea145a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A65%3A%22%5B%22111111111111111111%22%2C%22ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc%22%2C2592000%5D%22%3B%7D; advanced-frontend=465ponae4n0kq0a46bhpr5nnt6; _identity-frontend=12121c34548aca4609bb9225395af3bd2772715a9c4956f4e52a09d25f365390a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A65%3A%22%5B%22111111111111111111%22%2C%22ZrixnRczXTU1yk7UpnNAMMR5y_UncUAc%22%2C2592000%5D%22%3B%7D; _csrf-frontend=0030de4914c2182188f7f3eb71ac329a26af0f78386132cefdd592e9202ab472a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ILjJtbwtWiLNUF1bJ6Z9efMN2AmbDjCm%22%3B%7D; advanced-backend=chargqaf91g7p314rnb10dnt4r; _csrf-backend=37d0d989aa40e65099e8dee4125c8dc2e3ab64a979366c3af8716ee430cc2e91a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22PrRt-gq8hyu9kxciJCgyYWUNccGuc6rn%22%3B%7D'
+    'PATH' => 'E:\\Anaconda_;E:\\Anaconda_\\Library\\mingw-w64\\bin;E:\\Anaconda_\\Library\\usr\\bin;E:\\Anaconda_\\Library\\bin;E:\\Anaconda_\\Scripts;C:\\Program Files\\Microsoft MPI\\Bin\\;E:\\NKU\\tools\\apache-maven-3.6.1\\bin;E:\\NKU\\data\\hadoop\\windows\\hadoop-3.1.0\\bin;D:\\java\\jdk1.8\\bin;D:\\java\\jdk1.8-jre\\bin;D:\\TDM-GCC-64\\TDM-GCC-64\\bin;D:\\TDM-GCC\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\Strawberry\\c\\bin;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.5\\libnvvp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;D:\\Program Files\\MATLAB\\R2016b\\runtime\\win64;D:\\Program Files\\MATLAB\\R2016b\\bin;D:\\Program Files\\MATLAB\\R2016b\\polyspace\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\anaconda;D:\\anaconda\\Scripts;D:\\anaconda\\Library\\bin;D:\\anaconda\\Library\\mingw-w64\\bin;D:\\Python;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2021.3.0\\;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files\\Git\\cmd;D:\\java\\bin;C:\\Program Files (x86)\\ZeroTier\\One\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\dingyanfeng\\AppData\\Local\\Microsoft\\WindowsApps;;D:\\VScode\\Microsoft VS Code\\bin;D:\\pycharm\\PyCharm Community Edition 2021.2.2\\bin;;C:\\Users\\dingyanfeng\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 8090</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8090'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/Yii'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/Yii'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Yii/advanced/webDB/frontend/web/index.php'
+    'REMOTE_PORT' => '64782'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/advanced/webDB/frontend/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/advanced/webDB/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/webDB/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1676365853.5205
+    'REQUEST_TIME' => 1676365853
+]
